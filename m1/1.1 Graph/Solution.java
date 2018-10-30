@@ -50,7 +50,7 @@ class GraphList implements Graph {
 		for (int i = 0; i < edge; i++) {
 			String[] inputs = scaan.nextLine().split(" ");
 			addEdge(Integer.parseInt(inputs[0]),
-				Integer.parseInt(inputs[1]));
+			        Integer.parseInt(inputs[1]));
 		}
 	}
 
@@ -118,15 +118,13 @@ class GraphList implements Graph {
 					sb.append(tokens[j] + " ");
 				}
 				sb.append("\n");
-				return sb.toString();
 			}
+			return sb.toString();
 		} else {
 			sb.append("No Edges");
 			return sb.toString();
 		}
-	return "";
 	}
-
 }
 
 /**
