@@ -10,6 +10,125 @@ interface Graph {
 	public boolean hasEdge(int v, int w);
 }
 
+class GraphMatrix implements Graph {
+	/**
+	 * variable declaration.
+	 */
+	private int numOfVertices;
+	/**
+	 * variable declaration.
+	 */
+	private int numOfEdges;
+	/**
+	 * array declaration.
+	 */
+	private int[][] matrix;
+	/**
+	 * variable declaration.
+	 */
+	private String[] tokens;
+
+	/**
+	 * Constructs the object.
+	 */
+	GraphMatrix() {
+		this.numOfEdges = 0;
+	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      scaan  The scaan
+	 */
+	GraphMatrix(Scanner scaan) {
+		this.numOfVertices = Integer.parseInt(scaan.nextLine());
+		matrix =  new int[numOfVertices][numOfVertices];
+		// for (int i = 0; i < numOfVertices; i++) {
+		// 	adjacent[i] = new Bag<Integer>();
+		// }
+		int edge = Integer.parseInt(scaan.nextLine());
+		tokens = scaan.nextLine().split(",");
+		for (int i = 0; i < edge; i++) {
+			String[] inputs = scaan.nextLine().split(" ");
+			addEdge(Integer.parseInt(inputs[0]),
+			        Integer.parseInt(inputs[1]));
+		}
+	}
+
+	/**
+	 * calculates number of vertices.
+	 *
+	 * @return    number of vertices.
+	 */
+	public int V() {
+		return this.numOfVertices;
+	}
+	/**
+	 * calculates number of edges.
+	 *
+	 * @return     number of edges.
+	 */
+	public int E() {
+		return this.numOfEdges;
+	}
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      v     vertex 1.
+	 * @param      w     vertex 2.
+	 */
+	public void addEdge(int v, int w) {
+		if (v != w) {
+			if (!hasEdge(v, w)) {
+				matrix[v][w] = 1;
+				matrix[w][v] = 1;
+				numOfEdges++;
+			}
+		} else {
+			return;
+		}
+	}
+	public Iterable<Integer> adj(int v) {
+		return null;
+	}
+
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      v     vertex1.
+	 * @param      w     vertex2.
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
+	public boolean hasEdge(int v, int w) {
+		if (matrix[v][w] == 1) {
+			return true;
+		}
+		return false;
+	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
+	public String toString() {
+		String str = "";
+        str += numOfVertices + " vertices, " + numOfEdges + " edges" + "\n";
+        if (numOfEdges > 0) {
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[0].length; j++) {
+                    str += matrix[i][j] + " ";
+                }
+                str += "\n";
+            }
+            System.out.println(str);
+        } else {
+            str += "No edges";
+            System.out.println(str);
+        }
+        return str;
+    }
+}
+
 class GraphList implements Graph {
 	/**
 	 * variable declaration.
