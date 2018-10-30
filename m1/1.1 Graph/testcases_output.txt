@@ -169,13 +169,13 @@ Expected Output:
 Your Output: 
 
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 Your Output: 
 1 vertices, 0 edges
-No Edges
+No edges
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -191,11 +191,11 @@ No edges
 Your Output: 
 
 ----------------------------------------
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 Your Output: 
 0 vertices, 0 edges
-No Edges
+No edges
 ----------------------------------------

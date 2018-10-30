@@ -121,7 +121,7 @@ class GraphList implements Graph {
 			}
 			return sb.toString();
 		} else {
-			sb.append("No Edges");
+			sb.append("No edges");
 			return sb.toString();
 		}
 	}
