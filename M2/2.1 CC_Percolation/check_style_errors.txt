@@ -1,4 +1,4 @@
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\M2\2.1 CC_Percolation\Solution.java:152:5: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\M2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
