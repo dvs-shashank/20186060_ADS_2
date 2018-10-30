@@ -112,21 +112,21 @@ class GraphMatrix implements Graph {
 	 */
 	public String toString() {
 		String str = "";
-        str += numOfVertices + " vertices, " + numOfEdges + " edges" + "\n";
-        if (numOfEdges > 0) {
-            for (int i = 0; i < matrix.length; i++) {
-                for (int j = 0; j < matrix[0].length; j++) {
-                    str += matrix[i][j] + " ";
-                }
-                str += "\n";
-            }
-            System.out.println(str);
-        } else {
-            str += "No edges";
-            System.out.println(str);
-        }
-        return str;
-    }
+		str += numOfVertices + " vertices, " + numOfEdges + " edges" + "\n";
+		if (numOfEdges > 0) {
+			for (int i = 0; i < matrix.length; i++) {
+				for (int j = 0; j < matrix[0].length; j++) {
+					str += matrix[i][j] + " ";
+				}
+				str += "\n";
+			}
+			System.out.println(str);
+		} else {
+			str += "No edges";
+			System.out.println(str);
+		}
+		return str;
+	}
 }
 
 class GraphList implements Graph {
@@ -272,6 +272,8 @@ public final class Solution {
 			System.out.println(listObj);
 			break;
 		case "Matrix":
+			GraphMatrix matObj = new GraphMatrix(scan);
+			System.out.println(matObj);
 			break;
 		default:
 			break;

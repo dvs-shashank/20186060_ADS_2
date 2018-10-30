@@ -23,6 +23,7 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:90:38: Parameter v should be final. [FinalParameters]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:102:32: Parameter v should be final. [FinalParameters]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:102:39: Parameter w should be final. [FinalParameters]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:115: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:132: Missing a Javadoc comment. [JavadocType]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:161:19: Parameter scaan should be final. [FinalParameters]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:181:20: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
@@ -37,4 +38,4 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:252:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:258:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 37 errors.
+Checkstyle ends with 38 errors.
