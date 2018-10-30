@@ -194,13 +194,14 @@ class GraphList implements Graph {
      * @param      w     vertex 2.
      */
     public void addEdge(final int v, final int w) {
-        if (v != w) {
-            adjacent[v].add(w);
-            adjacent[w].add(v);
-            numOfEdges++;
-        } else {
+        if(v == w) {
             return;
         }
+        if (!hasEdge(v, w)) {
+            numOfEdges++;
+        }
+        adjacent[v].add(w);
+        adjacent[w].add(v);
     }
     /**
      * traverse through the graph.
@@ -222,6 +223,11 @@ class GraphList implements Graph {
      * @return     True if has edge, False otherwise.
      */
     public boolean hasEdge(final int v, final int w) {
+        for(int each: adj(v)) {
+            if(each == w) {
+                return true;
+            }
+        }
         return false;
     }
     /**
