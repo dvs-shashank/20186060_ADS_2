@@ -9,7 +9,9 @@ interface Graph {
 	public Iterable<Integer> adj(int v);
 	public boolean hasEdge(int v, int w);
 }
-
+/**
+ * Class for graph matrix.
+ */
 class GraphMatrix implements Graph {
 	/**
 	 * variable declaration.
@@ -39,7 +41,7 @@ class GraphMatrix implements Graph {
 	 *
 	 * @param      scaan  The scaan
 	 */
-	GraphMatrix(Scanner scaan) {
+	GraphMatrix(final Scanner scaan) {
 		this.numOfVertices = Integer.parseInt(scaan.nextLine());
 		matrix =  new int[numOfVertices][numOfVertices];
 		int edge = Integer.parseInt(scaan.nextLine());
@@ -73,7 +75,7 @@ class GraphMatrix implements Graph {
 	 * @param      v     vertex 1.
 	 * @param      w     vertex 2.
 	 */
-	public void addEdge(int v, int w) {
+	public void addEdge(final int v, final int w) {
 		if (v != w) {
 			if (!hasEdge(v, w)) {
 				matrix[v][w] = 1;
@@ -84,7 +86,7 @@ class GraphMatrix implements Graph {
 			return;
 		}
 	}
-	public Iterable<Integer> adj(int v) {
+	public Iterable<Integer> adj(final int v) {
 		return null;
 	}
 
@@ -96,7 +98,7 @@ class GraphMatrix implements Graph {
 	 *
 	 * @return     True if has edge, False otherwise.
 	 */
-	public boolean hasEdge(int v, int w) {
+	public boolean hasEdge(final int v, final int w) {
 		if (matrix[v][w] == 1) {
 			return true;
 		}
@@ -117,16 +119,16 @@ class GraphMatrix implements Graph {
 				}
 				str += "\n";
 			}
-			//System.out.println(str);
 		} else {
 			str += "No edges";
 			return str;
-			//System.out.println(str);
 		}
 		return str;
 	}
 }
-
+/**
+ * List of graphs.
+ */
 class GraphList implements Graph {
 	/**
 	 * variable declaration.
@@ -156,7 +158,7 @@ class GraphList implements Graph {
 	 *
 	 * @param      scaan  The scaan
 	 */
-	GraphList(Scanner scaan) {
+	GraphList(final Scanner scaan) {
 		this.numOfVertices = Integer.parseInt(scaan.nextLine());
 		adjacent = (Bag<Integer>[]) new Bag[numOfVertices];
 		for (int i = 0; i < numOfVertices; i++) {
@@ -193,7 +195,7 @@ class GraphList implements Graph {
 	 * @param      v     vertex 1.
 	 * @param      w     vertex 2.
 	 */
-	public void addEdge(int v, int w) {
+	public void addEdge(final int v, final int w) {
 		if (v != w) {
 			adjacent[v].add(w);
 			adjacent[w].add(v);
@@ -209,7 +211,7 @@ class GraphList implements Graph {
 	 *
 	 * @return     vertices.
 	 */
-	public Iterable<Integer> adj(int v) {
+	public Iterable<Integer> adj(final int v) {
 		return adjacent[v];
 	}
 
@@ -221,10 +223,14 @@ class GraphList implements Graph {
 	 *
 	 * @return     True if has edge, False otherwise.
 	 */
-	public boolean hasEdge(int v, int w) {
+	public boolean hasEdge(final int v, final int w) {
 		return false;
 	}
-
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(numOfVertices + " vertices, " + numOfEdges + " edges" + "\n");
@@ -253,17 +259,9 @@ public final class Solution {
 	 *
 	 * @param      args  The arguments.
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String implementationType  = scan.nextLine();
-		// int numVertices = Integer.parseInt(scan.nextLine());
-		// int numEdges  = Integer.parseInt(scan.nextLine());
-		// String[] vertices = scan.nextLine().split(",");
-
-		// while (numEdges > 0) {
-		// 	String[] connectedVertices = scan.nextLine().split(" ");
-		// 	numEdges--;
-		// }
 		switch (implementationType) {
 		case "List":
 			GraphList listObj = new GraphList(scan);
