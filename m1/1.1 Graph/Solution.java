@@ -32,7 +32,7 @@ class GraphList implements Graph {
 	 * Constructs the object.
 	 */
 	GraphList() {
-
+		this.numOfEdges = 0;
 	}
 	/**
 	 * Constructs the object.
