@@ -68,7 +68,7 @@ class GraphList implements Graph {
 	 * @return     number of edges.
 	 */
 	public int E() {
-		return -1;
+		return this.numOfEdges;
 	}
 	/**
 	 * Adds an edge.
