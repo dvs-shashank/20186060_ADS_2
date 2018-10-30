@@ -48,7 +48,7 @@ class GraphMatrix implements Graph {
 	 *
 	 * @return    number of vertices.
 	 */
-	public int V() {
+	public int numOfVertices() {
 		return this.numOfVertices;
 	}
 	/**
@@ -56,7 +56,7 @@ class GraphMatrix implements Graph {
 	 *
 	 * @return     number of edges.
 	 */
-	public int E() {
+	public int numOfEdges() {
 		return this.numOfEdges;
 	}
 	/**
@@ -76,6 +76,13 @@ class GraphMatrix implements Graph {
 			return;
 		}
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      v     { parameter_description }.
+	 *
+	 * @return     { description_of_the_return_value }.
+	 */
 	public Iterable<Integer> adj(final int v) {
 		return null;
 	}
@@ -168,7 +175,7 @@ class GraphList implements Graph {
 	 *
 	 * @return    number of vertices.
 	 */
-	public int V() {
+	public int numOfVertices() {
 		return this.numOfVertices;
 	}
 	/**
@@ -176,7 +183,7 @@ class GraphList implements Graph {
 	 *
 	 * @return     number of edges.
 	 */
-	public int E() {
+	public int numOfEdges() {
 		return this.numOfEdges;
 	}
 	/**
