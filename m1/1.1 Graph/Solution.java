@@ -194,7 +194,7 @@ class GraphList implements Graph {
      * @param      w     vertex 2.
      */
     public void addEdge(final int v, final int w) {
-        if(v == w) {
+        if (v == w) {
             return;
         }
         if (!hasEdge(v, w)) {
@@ -223,8 +223,8 @@ class GraphList implements Graph {
      * @return     True if has edge, False otherwise.
      */
     public boolean hasEdge(final int v, final int w) {
-        for(int each: adj(v)) {
-            if(each == w) {
+        for (int each : adj(v)) {
+            if (each == w) {
                 return true;
             }
         }
