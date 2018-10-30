@@ -45,9 +45,9 @@ class GraphList implements Graph {
 		for (int i = 0; i < numOfVertices; i++) {
 			adjacent[i] = new Bag<Integer>();
 		}
-		numOfEdges = Integer.parseInt(scaan.nextLine());
+		int edge = Integer.parseInt(scaan.nextLine());
 		tokens = scaan.nextLine().split(",");
-		for (int i = 0; i < numOfEdges; i++) {
+		for (int i = 0; i < edge; i++) {
 			String[] inputs = scaan.nextLine().split(" ");
 			addEdge(Integer.parseInt(inputs[0]),
 				Integer.parseInt(inputs[1]));
