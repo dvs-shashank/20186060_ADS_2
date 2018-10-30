@@ -1,15 +1,5 @@
 import java.util.Scanner;
 /**
- * Interface for graph.
- */
-interface Graph {
-	public int V();
-	public int E();
-	public void addEdge(int v, int w);
-	public Iterable<Integer> adj(int v);
-	public boolean hasEdge(int v, int w);
-}
-/**
  * Class for graph matrix.
  */
 class GraphMatrix implements Graph {
