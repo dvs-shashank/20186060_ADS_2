@@ -110,7 +110,7 @@ class GraphMatrix implements Graph {
 	 *
 	 * @return     String representation of the object.
 	 */
-	public String toString() {
+	public String output() {
 		String str = "";
 		str += numOfVertices + " vertices, " + numOfEdges + " edges" + "\n";
 		if (numOfEdges > 0) {
@@ -273,7 +273,7 @@ public final class Solution {
 			break;
 		case "Matrix":
 			GraphMatrix matObj = new GraphMatrix(scan);
-			System.out.println(matObj);
+			System.out.println(matObj.output());
 			break;
 		default:
 			break;
