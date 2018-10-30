@@ -42,9 +42,6 @@ class GraphMatrix implements Graph {
 	GraphMatrix(Scanner scaan) {
 		this.numOfVertices = Integer.parseInt(scaan.nextLine());
 		matrix =  new int[numOfVertices][numOfVertices];
-		// for (int i = 0; i < numOfVertices; i++) {
-		// 	adjacent[i] = new Bag<Integer>();
-		// }
 		int edge = Integer.parseInt(scaan.nextLine());
 		tokens = scaan.nextLine().split(",");
 		for (int i = 0; i < edge; i++) {
@@ -120,10 +117,11 @@ class GraphMatrix implements Graph {
 				}
 				str += "\n";
 			}
-			System.out.println(str);
+			//System.out.println(str);
 		} else {
 			str += "No edges";
-			System.out.println(str);
+			return str;
+			//System.out.println(str);
 		}
 		return str;
 	}
