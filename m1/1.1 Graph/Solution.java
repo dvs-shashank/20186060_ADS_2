@@ -81,6 +81,8 @@ class GraphList implements Graph {
 			adjacent[v].add(w);
 			adjacent[w].add(v);
 			numOfEdges++;
+		} else {
+			return;
 		}
 	}
 	/**
