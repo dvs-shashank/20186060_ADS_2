@@ -105,6 +105,26 @@ class GraphList implements Graph {
 	public boolean hasEdge(int v, int w) {
 		return false;
 	}
+
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(numOfVertices + " vertices, " + numOfEdges + " edges" + "\n");
+		if (numOfEdges > 0) {
+			for (int i = 0; i < numOfVertices; i++) {
+				sb.append(tokens[i] + ": ");
+				for (int j : adjacent[i]) {
+					sb.append(tokens[j] + " ");
+				}
+				sb.append("\n");
+				return sb.toString();
+			}
+		} else {
+			sb.append("No Edges");
+			return sb.toString();
+		}
+	return "";
+	}
+
 }
 
 /**

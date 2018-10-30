@@ -22,7 +22,9 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:93:38: Parameter v should be final. [FinalParameters]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:105:32: Parameter v should be final. [FinalParameters]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:105:39: Parameter w should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:113:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:119:33: Parameter args should be final. [FinalParameters]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:109:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:111: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:133:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m1\1.1 Graph\Solution.java:139:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 27 errors.

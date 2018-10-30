@@ -18,7 +18,7 @@ Your Output:
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
 	at GraphList.<init>(Solution.java:51)
-	at Solution.main(Solution.java:132)
+	at Solution.main(Solution.java:152)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -82,7 +82,7 @@ Your Output:
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Unknown Source)
 	at GraphList.<init>(Solution.java:51)
-	at Solution.main(Solution.java:132)
+	at Solution.main(Solution.java:152)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -131,7 +131,8 @@ Expected Output:
 1 vertices, 0 edges
 No edges
 Your Output: 
-GraphList@6b71769e
+1 vertices, 1 edges
+Hyderabad:
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -152,5 +153,6 @@ Expected Output:
 0 vertices, 0 edges
 No edges
 Your Output: 
-GraphList@6bdf28bb
+0 vertices, 0 edges
+No Edges
 ----------------------------------------
