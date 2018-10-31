@@ -28,7 +28,7 @@ import java.util.NoSuchElementException;
  *  For additional documentation, see <a href="/algs4/13stacks">Section 1.3</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
-public class Stack<Item> implements Iterable<Item> {
+class Stack<Item> implements Iterable<Item> {
     private int N;          // size of the stack
     private Node first;     // top of stack
 

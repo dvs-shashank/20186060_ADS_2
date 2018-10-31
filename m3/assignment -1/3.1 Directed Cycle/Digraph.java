@@ -2,7 +2,7 @@ import java.util.NoSuchElementException;
 /**
  * Class for digraph.
  */
-public class Digraph {
+class Digraph {
     /**
      * {number of vertices in  digraph}.
      */
