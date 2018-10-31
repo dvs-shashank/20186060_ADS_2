@@ -4,18 +4,13 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:24:8: Unused @param tag for 'vertices'. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:26:23: Expected @param tag for 'val'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:20: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:48: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:54:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:98: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:102: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:50:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:56:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...

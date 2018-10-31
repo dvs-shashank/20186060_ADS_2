@@ -17,7 +17,7 @@ class DirectedCycle {
     /**
      * { var_description }.
      */
-    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
+    private Stack<Integer> cycle;
     /**
      * Constructs the object.
      *
@@ -45,7 +45,9 @@ class DirectedCycle {
         for (int w : g.adj(v)) {
 
             // short circuit if directed cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
             // found new vertex, so recur
             else if (!marked[w]) {
@@ -95,11 +97,14 @@ class DirectedCycle {
             // verify cycle
             int first = -1, last = -1;
             for (int v : cycle()) {
-                if (first == -1) first = v;
+                if (first == -1) {
+                    first = v;
+                }
                 last = v;
             }
             if (first != last) {
-                System.out.println("cycle begins with %d and ends with %d\n" + first + last);
+                System.out.println("cycle begins with %d and ends with %d\n"
+                                   + first + last);
                 return false;
             }
         }

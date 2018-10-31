@@ -21,7 +21,7 @@ class Digraph {
     /**
      * Constructs the object.
      *
-     * @param      vertices     { parameter_description }.
+     * @param      val   The value.
      */
     Digraph(final int val) {
         if (val < 0) {
