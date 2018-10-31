@@ -33,28 +33,31 @@ class Bag<Item> implements Iterable<Item> {
     /**
      * Constructs the object.
      */
-    public Bag() {
+    Bag() {
         first = null;
         N = 0;
     }
-
     /**
-      * Is the BAG empty?
-      */
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
-
     /**
-      * Return the number of items in the bag.
-      */
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public int size() {
         return N;
     }
-
     /**
-      * Add the item to the bag.
-      */
+     * { function_description }.
+     *
+     * @param      item  The item.
+     */
     public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
@@ -62,15 +65,14 @@ class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         N++;
     }
-
-
     /**
-      * Return an iterator that iterates over the items in the bag.
-      */
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
-
     /**
      * Class for list iterator.
      */
@@ -84,11 +86,15 @@ class Bag<Item> implements Iterable<Item> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext()  { return current != null;                     }
+        public boolean hasNext()  {
+            return current != null;
+        }
         /**
          * { function_description }.
          */
-        public void remove()      { throw new UnsupportedOperationException();  }
+        public void remove()      {
+            throw new UnsupportedOperationException();
+        }
         /**
          * { function_description }.
          *
