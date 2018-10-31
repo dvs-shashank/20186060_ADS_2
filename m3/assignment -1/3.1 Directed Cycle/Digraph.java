@@ -23,16 +23,16 @@ class Digraph {
      *
      * @param      vertices     { parameter_description }.
      */
-    Digraph(final int V) {
-        if (V < 0) {
+    Digraph(final int val) {
+        if (val < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
         }
-        this.vertices = V;
+        this.vertices = val;
         this.edges = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        indegree = new int[val];
+        adj = (Bag<Integer>[]) new Bag[val];
+        for (int v = 0; v < val; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -42,7 +42,7 @@ class Digraph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V() {
+    public int numV() {
         return vertices;
     }
 
@@ -51,7 +51,7 @@ class Digraph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int E() {
+    public int numE() {
         return edges;
     }
 
