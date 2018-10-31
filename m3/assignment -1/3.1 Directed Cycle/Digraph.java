@@ -1,4 +1,3 @@
-import java.util.NoSuchElementException;
 /**
  * Class for digraph.
  */
@@ -19,14 +18,12 @@ class Digraph {
      * {indegree[v] = indegree of vertex v}.
      */
     private int[] indegree;
-
     /**
-     * Initializes an empty digraph with <em>V</em> vertices.
+     * Constructs the object.
      *
-     * @param  V the number of vertices
-     * @throws IllegalArgumentException if {@code V < 0}
+     * @param      V     { parameter_description }.
      */
-    public Digraph(int V) {
+    public Digraph(final int V) {
         if (V < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
@@ -40,75 +37,69 @@ class Digraph {
         }
     }
     /**
-     * Returns the number of vertices in this digraph.
      *
-     * @return the number of vertices in this digraph
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int V() {
         return V;
     }
 
     /**
-     * Returns the number of edges in this digraph.
+     * { function_description }.
      *
-     * @return the number of edges in this digraph
+     * @return     { description_of_the_return_value }
      */
     public int E() {
         return E;
     }
 
     /**
-     * Adds the directed edge v→w to this digraph.
+     * Adds an edge.
      *
-     * @param  v the tail vertex
-     * @param  w the head vertex
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @param      v     { parameter_description }.
+     * @param      w     { parameter_description }.
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         adj[v].add(w);
         indegree[w]++;
         E++;
     }
-
     /**
-     * Returns the vertices adjacent from vertex {@code v} in this digraph.
+     * { function_description }.
      *
-     * @param  v the vertex
-     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
-
     /**
-     * Returns the number of directed edges incident from vertex {@code v}.
-     * This is known as the <em>outdegree</em> of vertex {@code v}.
+     * { function_description }.
      *
-     * @param  v the vertex
-     * @return the outdegree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    public int outdegree(int v) {
+    public int outdegree(final int v) {
         return adj[v].size();
     }
-
     /**
-     * Returns the number of directed edges incident to vertex {@code v}.
-     * This is known as the <em>indegree</em> of vertex {@code v}.
+     * { function_description }.
      *
-     * @param  v the vertex
-     * @return the indegree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    public int indegree(int v) {
+    public int indegree(final int v) {
         return indegree[v];
     }
-
     /**
-     * Returns the reverse of the digraph.
+     * { function_description }.
      *
-     * @return the reverse of the digraph
+     * @return     { description_of_the_return_value }
      */
     public Digraph reverse() {
         Digraph reverse = new Digraph(V);

@@ -1,29 +1,18 @@
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Bag.java:13:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Bag.java:104: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:9:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:13:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:29:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:29:20: Parameter V should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:29:24: 'V' hides a field. [HiddenField]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:29:24: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:47:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:56:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:65: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:67:25: Parameter v should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:67:32: Parameter w should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:77: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:80:34: Parameter v should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:92:26: Parameter v should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:104:25: Parameter v should be final. [FinalParameters]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:8:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:12:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:26:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:26:30: 'V' hides a field. [HiddenField]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:26:30: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:45:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Digraph.java:54:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:5: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:20: Line is longer than 80 characters (found 81). [LineLength]
