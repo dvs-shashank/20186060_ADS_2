@@ -52,9 +52,9 @@ public class DirectedCycle {
      */
     public boolean hasCycle() {
         if (cycle != null) {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 
     /**
