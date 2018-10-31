@@ -5,11 +5,11 @@ class Digraph {
     /**
      * {number of vertices in  digraph}.
      */
-    private final int V;
+    private final int vertices;
     /**
      * {number of edges in  digraph}.
      */
-    private int E;
+    private int edges;
     /**
      * {adj[v] = adjacency list for vertex v}.
      */
@@ -21,15 +21,15 @@ class Digraph {
     /**
      * Constructs the object.
      *
-     * @param      V     { parameter_description }.
+     * @param      vertices     { parameter_description }.
      */
     Digraph(final int V) {
         if (V < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
+        this.vertices = V;
+        this.edges = 0;
         indegree = new int[V];
         adj = (Bag<Integer>[]) new Bag[V];
         for (int v = 0; v < V; v++) {
@@ -43,7 +43,7 @@ class Digraph {
      * @return     { description_of_the_return_value }
      */
     public int V() {
-        return V;
+        return vertices;
     }
 
     /**
@@ -52,7 +52,7 @@ class Digraph {
      * @return     { description_of_the_return_value }
      */
     public int E() {
-        return E;
+        return edges;
     }
 
     /**
@@ -64,7 +64,7 @@ class Digraph {
     public void addEdge(final int v, final int w) {
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        edges++;
     }
     /**
      * { function_description }.
@@ -102,8 +102,8 @@ class Digraph {
      * @return     { description_of_the_return_value }
      */
     public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
+        Digraph reverse = new Digraph(vertices);
+        for (int v = 0; v < vertices; v++) {
             for (int w : adj(v)) {
                 reverse.addEdge(w, v);
             }
