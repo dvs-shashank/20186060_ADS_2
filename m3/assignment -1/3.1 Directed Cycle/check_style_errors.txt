@@ -14,16 +14,15 @@ Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:20: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:26:19: Parameter G should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:26:27: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:31: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:40:36: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:37:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:40:36: Expected @param tag for 'g'. [JavadocMethod]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:46: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:52:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:97: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:101: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:96: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:100: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -21,14 +21,14 @@ class DirectedCycle {
     /**
      * Constructs the object.
      *
-     * @param      G     { parameter_description }.
+     * @param      g     { parameter_description }.
      */
-    DirectedCycle(Digraph G) {
-        marked  = new boolean[G.V()];
-        onStack = new boolean[G.V()];
-        edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
-            if (!marked[v] && cycle == null) dfs(G, v);
+    DirectedCycle(final Digraph g) {
+        marked  = new boolean[g.V()];
+        onStack = new boolean[g.V()];
+        edgeTo  = new int[g.V()];
+        for (int v = 0; v < g.V(); v++) {
+            if (!marked[v] && cycle == null) dfs(g, v);
         }
     }
     /**
@@ -37,10 +37,10 @@ class DirectedCycle {
      * @param      G     { parameter_description }.
      * @param      v     { parameter_description }.
      */
-    private void dfs(final Digraph G, final int v) {
+    private void dfs(final Digraph g, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
 
             // short circuit if directed cycle found
             if (cycle != null) return;
@@ -48,9 +48,8 @@ class DirectedCycle {
             // found new vertex, so recur
             else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(g, w);
             }
-
             // trace back directed cycle
             else if (onStack[w]) {
                 cycle = new Stack<Integer>();
