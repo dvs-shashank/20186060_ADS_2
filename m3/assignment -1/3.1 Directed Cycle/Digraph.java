@@ -23,7 +23,7 @@ class Digraph {
      *
      * @param      V     { parameter_description }.
      */
-    public Digraph(final int V) {
+    Digraph(final int V) {
         if (V < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");

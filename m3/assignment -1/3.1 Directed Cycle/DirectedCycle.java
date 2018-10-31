@@ -3,7 +3,7 @@
  */
 class DirectedCycle {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private boolean[] marked;
     /**
@@ -65,8 +65,9 @@ class DirectedCycle {
     }
 
     /**
-     * Does the digraph have a directed cycle?
-     * @return {@code true} if the digraph has a directed cycle, {@code false} otherwise
+     * Determines if it has cycle.
+     *
+     * @return     True if has cycle, False otherwise.
      */
     public boolean hasCycle() {
         if (cycle != null) {
