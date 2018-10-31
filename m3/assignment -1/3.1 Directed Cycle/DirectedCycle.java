@@ -51,7 +51,10 @@ public class DirectedCycle {
      * @return {@code true} if the digraph has a directed cycle, {@code false} otherwise
      */
     public boolean hasCycle() {
-        return cycle != null;
+        if (cycle != null) {
+            return false;
+        }
+        return true;
     }
 
     /**
