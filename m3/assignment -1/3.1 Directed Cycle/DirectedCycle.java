@@ -1,13 +1,27 @@
+/**
+ * Class for directed cycle.
+ */
 class DirectedCycle {
-    private boolean[] marked;        // marked[v] = has vertex v been marked?
-    private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
-    private boolean[] onStack;       // onStack[v] = is vertex on the stack?
-    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
-
     /**
-     * Determines whether the digraph {@code G} has a directed cycle and, if so,
-     * finds such a cycle.
-     * @param G the digraph
+     * { var_description }
+     */
+    private boolean[] marked;
+    /**
+     * // marked[v] = has vertex v been marked?.
+     */
+    private int[] edgeTo;
+    /**
+     * { var_description }.
+     */
+    private boolean[] onStack;
+    /**
+     * { var_description }.
+     */
+    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
+    /**
+     * Constructs the object.
+     *
+     * @param      G     { parameter_description }.
      */
     public DirectedCycle(Digraph G) {
         marked  = new boolean[G.V()];
@@ -16,8 +30,12 @@ class DirectedCycle {
         for (int v = 0; v < G.V(); v++)
             if (!marked[v] && cycle == null) dfs(G, v);
     }
-
-    // check that algorithm computes either the topological order or finds a directed cycle
+    /**
+     * { function_description }.
+     *
+     * @param      G     { parameter_description }.
+     * @param      v     { parameter_description }.
+     */
     private void dfs(Digraph G, int v) {
         onStack[v] = true;
         marked[v] = true;
@@ -56,17 +74,19 @@ class DirectedCycle {
         }
         return false;
     }
-
     /**
-     * Returns a directed cycle if the digraph has a directed cycle, and {@code null} otherwise.
-     * @return a directed cycle (as an iterable) if the digraph has a directed cycle,
-     *    and {@code null} otherwise
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<Integer> cycle() {
         return cycle;
     }
-
-    // certify that digraph has a directed cycle if it reports one
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     private boolean check() {
         if (hasCycle()) {
             // verify cycle
