@@ -20,7 +20,10 @@ public class Graph {
      * @param      val     { parameter_description }.
      */
     public Graph(final int val) {
-        if (val < 0) throw new RuntimeException("Number of vertices must be nonnegative");
+        if (val < 0) {
+            throw new RuntimeException
+            ("Number of vertices must be nonnegative");
+        }
         this.vertices = val;
         this.edges = 0;
         adj = (Bag<Integer>[]) new Bag[val];
@@ -36,7 +39,10 @@ public class Graph {
      */
     public Graph(final int val, final int eeedge) {
         this(val);
-        if (eeedge < 0) throw new RuntimeException("Number of edges must be nonnegative");
+        if (eeedge < 0) {
+            throw new RuntimeException
+            ("Number of edges must be nonnegative");
+        }
         for (int i = 0; i < eeedge; i++) {
             int v = (int) (Math.random() * val);
             int w = (int) (Math.random() * val);
@@ -67,7 +73,7 @@ public class Graph {
         adj[w].add(v);
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      v     { parameter_description }
      *
@@ -83,14 +89,14 @@ public class Graph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        String NEWLINE = System.getProperty("line.separator");
-        s.append(vertices + " vertices, " + edges + " edges " + NEWLINE);
+        String newLine = System.getProperty("line.separator");
+        s.append(vertices + " vertices, " + edges + " edges " + newLine);
         for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");
             }
-            s.append(NEWLINE);
+            s.append(newLine);
         }
         return s.toString();
     }

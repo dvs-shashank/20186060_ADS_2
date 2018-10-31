@@ -6,18 +6,14 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:23: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:23: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:39: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:39: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:51:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:51:20: '{' at column 20 should have line break after. [LeftCurly]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:57:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:25:13: '(' should be on the previous line. [MethodParamPad]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:44:13: '(' should be on the previous line. [MethodParamPad]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:57:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:57:20: '{' at column 20 should have line break after. [LeftCurly]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:69: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:86:16: Name 'NEWLINE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:63:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:63:20: '{' at column 20 should have line break after. [LeftCurly]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Queue.java:4: Line has trailing spaces. [RegexpSingleline]
