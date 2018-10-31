@@ -1,7 +1,5 @@
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:8: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:21: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:22: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:23: Line is longer than 80 characters (found 85). [LineLength]
@@ -24,8 +22,7 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:92: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:99: Expected @return tag. [JavadocMethod]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:101: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:105: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:108: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:108: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:110: Expected @return tag. [JavadocMethod]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:110:39: '{' at column 39 should have line break after. [LeftCurly]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:113: Missing a Javadoc comment. [JavadocType]
@@ -36,6 +33,5 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:116:35: '{' at column 35 should have line break after. [LeftCurly]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:118:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:119: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\Stack.java:121: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 34 errors.
