@@ -4,6 +4,13 @@ import java.util.Scanner;
  */
 public final class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //eval purpose.
+    }
+
+    /**
      * main method.
      *
      * @param      args  The arguments
