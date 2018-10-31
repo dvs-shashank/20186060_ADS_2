@@ -10,15 +10,12 @@ Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:20: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:31: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:37:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:40:36: Expected @param tag for 'g'. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:46: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:52:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:96: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:100: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:48: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:54:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:98: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment -1\3.1 Directed Cycle\DirectedCycle.java:102: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
 Starting audit...

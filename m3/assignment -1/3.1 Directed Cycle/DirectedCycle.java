@@ -28,13 +28,15 @@ class DirectedCycle {
         onStack = new boolean[g.numV()];
         edgeTo  = new int[g.numV()];
         for (int v = 0; v < g.numV(); v++) {
-            if (!marked[v] && cycle == null) dfs(g, v);
+            if (!marked[v] && cycle == null) {
+                dfs(g, v);
+            }
         }
     }
     /**
      * { function_description }.
      *
-     * @param      G     { parameter_description }.
+     * @param      g     { parameter_description }.
      * @param      v     { parameter_description }.
      */
     private void dfs(final Digraph g, final int v) {
