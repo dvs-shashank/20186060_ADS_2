@@ -5,7 +5,7 @@ class DirectedCycle {
     /**
      * { var_description }.
      */
-    private boolean isbipartite;
+    private boolean isbipartite = false;
     /**
      * { var_description }.
      */
