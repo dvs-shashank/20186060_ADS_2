@@ -54,13 +54,13 @@ public class Graph {
      *
      * @return     { description_of_the_return_value }.
      */
-    public int V() { return vertices; }
+    public int numV() { return vertices; }
     /**
      * { function_description }.
      *
      * @return     { description_of_the_return_value }.
      */
-    public int E() { return edges; }
+    public int numE() { return edges; }
     /**
      * Adds an edge.
      *
