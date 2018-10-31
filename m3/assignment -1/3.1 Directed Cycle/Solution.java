@@ -16,7 +16,7 @@ public final class Solution {
 		while (numOfEdges > 0) {
 			String[] connectedVertices = scan.nextLine().split(" ");
 			dg.addEdge(Integer.parseInt(connectedVertices[0]),
-				Integer.parseInt(connectedVertices[0]));
+				Integer.parseInt(connectedVertices[1]));
 			numOfEdges--;
 		}
 		DirectedCycle dc = new DirectedCycle(dg);
