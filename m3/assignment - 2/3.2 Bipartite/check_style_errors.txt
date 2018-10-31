@@ -5,17 +5,11 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:25:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:44:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:57:23: '{' at column 23 should have line break after. [LeftCurly]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:63:23: '{' at column 23 should have line break after. [LeftCurly]
-Audit done.
-Checkstyle ends with 5 errors.
-Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:13: First sentence should end with a period. [JavadocStyle]
 Audit done.
 Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
 Starting audit...
 Audit done.
 Starting audit...

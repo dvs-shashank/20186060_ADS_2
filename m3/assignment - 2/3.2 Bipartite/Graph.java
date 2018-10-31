@@ -11,7 +11,7 @@ public class Graph {
      */
     private int edges;
     /**
-     * { var_description }.
+     * { var_description }
      */
     private Bag<Integer>[] adj;
     /**
@@ -21,8 +21,8 @@ public class Graph {
      */
     public Graph(final int val) {
         if (val < 0) {
-            throw new RuntimeException
-            ("Number of vertices must be nonnegative");
+            throw new RuntimeException(
+                "Number of vertices must be nonnegative");
         }
         this.vertices = val;
         this.edges = 0;
@@ -40,8 +40,8 @@ public class Graph {
     public Graph(final int val, final int eeedge) {
         this(val);
         if (eeedge < 0) {
-            throw new RuntimeException
-            ("Number of edges must be nonnegative");
+            throw new RuntimeException(
+                "Number of edges must be nonnegative");
         }
         for (int i = 0; i < eeedge; i++) {
             int v = (int) (Math.random() * val);
@@ -54,13 +54,17 @@ public class Graph {
      *
      * @return     { description_of_the_return_value }.
      */
-    public int numV() { return vertices; }
+    public int numV() {
+        return vertices;
+    }
     /**
      * { function_description }.
      *
      * @return     { description_of_the_return_value }.
      */
-    public int numE() { return edges; }
+    public int numE() {
+        return edges;
+    }
     /**
      * Adds an edge.
      *
@@ -102,3 +106,4 @@ public class Graph {
     }
 
 }
+
