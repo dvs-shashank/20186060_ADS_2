@@ -20,11 +20,14 @@ public final class Solution {
 			numOfEdges--;
 		}
 		DirectedCycle dc = new DirectedCycle(dg);
-		if (!dc.hasCycle()) {
-			System.out.println("Cycle doesn't exists.");
-		} else {
-			System.out.println("Cycle exists.");
-		}
+		boolean something = dc.hasCycle();
+		System.out.println(something);
+		// if () {
+		// 	System.out.println("Cycle exists.");
+		// } else {
+
+		// 	System.out.println("Cycle doesn't exists.");
+		// }
 
 	}
 }
