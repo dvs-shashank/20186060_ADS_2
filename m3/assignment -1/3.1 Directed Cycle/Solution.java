@@ -22,7 +22,7 @@ public final class Solution {
 		DirectedCycle dc = new DirectedCycle(dg);
 		if (dc.hasCycle()) {
 			System.out.println("Cycle exists.");
-		} else {
+		} else if(!dc.hasCycle()){
 			System.out.println("Cycle doesn't exists.");
 		}
 
