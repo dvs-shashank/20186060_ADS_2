@@ -21,9 +21,9 @@ public final class Solution {
 		}
 		DirectedCycle dc = new DirectedCycle(dg);
 		if (dc.hasCycle()) {
-			System.out.println("Cycle exists");
+			System.out.println("Cycle exists.");
 		} else {
-			System.out.println("Cycle doesnt exists.");
+			System.out.println("Cycle doesn't exists.");
 		}
 
 	}
