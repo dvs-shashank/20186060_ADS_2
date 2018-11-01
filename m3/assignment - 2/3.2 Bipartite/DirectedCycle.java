@@ -44,7 +44,6 @@ public class DirectedCycle {
      * @param      v     { parameter_description }.
      */
     private void dfs(final Digraph g, final int v) {
-        isbipartite = !isbipartite;
         onStack[v] = true;
         marked[v] = true;
         for (int w : g.adj(v)) {
@@ -56,6 +55,7 @@ public class DirectedCycle {
                 edgeTo[w] = v;
                 dfs(g, w);
             } else if (onStack[w]) {
+                isbipartite = !isbipartite;
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
