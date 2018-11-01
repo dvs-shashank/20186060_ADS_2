@@ -29,14 +29,13 @@ public class WordNet {
                 String[] nounsArray = fileArray[1].split(" ");
             }
             Digraph digraphObj = new Digraph(numOfVertices);
-            parseMyHypernymsFile(hypernyms, digraphObj);
+            parseMyHypernymsFile(hypernyms, digraphObj, numOfVertices);
         } catch (Exception e) {
             System.out.println("File not found");
         }
     }
 
-
-    void parseMyHypernymsFile(String hypernyms, Digraph tempObj) {
+    void parseMyHypernymsFile(String hypernyms, Digraph tempObj, int numOfVertices) {
         try {
             In inObj = new In(hypernyms);
             while (!inObj.isEmpty()) {
@@ -51,6 +50,14 @@ public class WordNet {
                 //tempObj.addEdge(v, w);
             }
             DirectedCycle dc = new DirectedCycle(tempObj);
+            int count = 0;
+            for (int i = 0; i < numOfVertices; i++) {
+                if (tempObj.outdegree(i) == 0) {
+                    count++;
+                }
+            } if (count >1) {
+                System.out.println("Multiple roots");
+            }
             //System.out.println(tempObj);
             if (dc.hasCycle()) {
                 System.out.println("Cycle detected");
