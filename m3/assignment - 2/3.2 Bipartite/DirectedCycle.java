@@ -52,10 +52,10 @@ public class DirectedCycle {
             if (cycle != null) {
                 return;
             } else if (!marked[w]) {
+                isbipartite = !isbipartite;
                 edgeTo[w] = v;
                 dfs(g, w);
             } else if (onStack[w]) {
-                isbipartite = !isbipartite;
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
