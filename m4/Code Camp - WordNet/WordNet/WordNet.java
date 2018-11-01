@@ -56,13 +56,9 @@ public class WordNet {
                     count++;
                 }
             }
-            try {
-                if (count > 1) {
-                    //System.out.println("Multiple roots");
-                    throw new Exception();
-                }
-            } catch (Exception e) {
+            if (count > 1) {
                 System.out.println("Multiple roots");
+                return;
             }
 
             //System.out.println(tempObj);
