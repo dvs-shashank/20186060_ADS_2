@@ -1,8 +1,13 @@
 import java.util.Arrays;
+import java.util.ArrayList;
 /**
  * Class for word net.
  */
 public class WordNet {
+    /**
+     * { item_description }.
+     */
+    private LinearProbingHashST<String, ArrayList<Integer>> hashObj;
     /**
      * Constructs the object.
      *
@@ -21,12 +26,16 @@ public class WordNet {
         int id = 0;
         int numOfVertices = 0;
         try {
+            ArrayList listObj = new ArrayList<Integer>();
             In inObj = new In(filename);
             while (!inObj.isEmpty()) {
                 numOfVertices++;
                 String[] fileArray = inObj.readString().split(",");
                 id = Integer.parseInt(fileArray[0]);
                 String[] nounsArray = fileArray[1].split(" ");
+                for (int i =0; i < nounsArray.length; i++) {
+                    //hashObj.put(nounsArray[i], listObj.add(id));
+                }
             }
             Digraph digraphObj = new Digraph(numOfVertices);
             parseMyHypernymsFile(hypernyms, digraphObj, numOfVertices);
@@ -60,7 +69,6 @@ public class WordNet {
                 System.out.println("Multiple roots");
                 return;
             }
-
             //System.out.println(tempObj);
             if (dc.hasCycle()) {
                 System.out.println("Cycle detected");
