@@ -42,8 +42,12 @@ public class WordNet {
             while (!inObj.isEmpty()) {
                 String[] fileArray = inObj.readString().split(",");
                 int v = Integer.parseInt(fileArray[0]);
-                int w = Integer.parseInt(fileArray[1]);
-                tempObj.addEdge(v, w);
+                for (int i = 1; i < fileArray.length; i++) {
+                    tempObj.addEdge(v, i);
+                }
+                // int v = Integer.parseInt(fileArray[0]);
+                // int w = Integer.parseInt(fileArray[1]);
+                //tempObj.addEdge(v, w);
             }
             DirectedCycle dc = new DirectedCycle(tempObj);
             if (dc.hasCycle()) {
