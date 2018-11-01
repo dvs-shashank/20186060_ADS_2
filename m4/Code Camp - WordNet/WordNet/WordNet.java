@@ -30,7 +30,6 @@ public class WordNet {
             }
             Digraph digraphObj = new Digraph(numOfVertices);
             parseMyHypernymsFile(hypernyms, digraphObj);
-            //System.out.println(digraphObj);
         } catch (Exception e) {
             System.out.println("File not found");
         }
@@ -46,9 +45,14 @@ public class WordNet {
                 int w = Integer.parseInt(fileArray[1]);
                 tempObj.addEdge(v, w);
             }
-            System.out.println(tempObj);
+            DirectedCycle dc = new DirectedCycle(tempObj);
+            if (dc.hasCycle()) {
+                System.out.println("Cycle detected");
+            } else {
+                System.out.println(tempObj);
+            }
         } catch (Exception e) {
-
+            System.out.println("File not found");
         }
 
     }
@@ -56,8 +60,10 @@ public class WordNet {
     // // returns all WordNet nouns
     // public Iterable<String> nouns()
 
-    // // is the word a WordNet noun?
-    // public boolean isNoun(String word)
+    //is the word a WordNet noun?
+    public boolean isNoun(String word) {
+        return false;
+    }
 
     // // distance between nounA and nounB (defined below)
     // public int distance(String nounA, String nounB)
