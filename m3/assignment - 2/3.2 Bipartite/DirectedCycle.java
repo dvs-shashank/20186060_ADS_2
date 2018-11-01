@@ -1,7 +1,7 @@
 /**
  * Class for directed cycle.
  */
-class DirectedCycle {
+public class DirectedCycle {
     /**
      * { var_description }.
      */
