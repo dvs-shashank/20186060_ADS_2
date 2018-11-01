@@ -3,7 +3,10 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\DirectedCycle.java:55:27: '==' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\DirectedCycle.java:55:29: '==' is not followed by whitespace. [WhitespaceAround]
 Audit done.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:13: First sentence should end with a period. [JavadocStyle]
 Audit done.

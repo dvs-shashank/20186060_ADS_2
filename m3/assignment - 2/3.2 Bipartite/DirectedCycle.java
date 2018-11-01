@@ -50,9 +50,9 @@ public class DirectedCycle {
         for (int w : g.adj(v)) {
 
             // short circuit if directed cycle found
-            if (cycle != null) {
-                return;
-            } else if (!marked[w]) {
+            // if (cycle != null) {
+            //     return;
+            if (onStack[w]==onStack[v]) {
                 edgeTo[w] = v;
                 isbipartite = !isbipartite;
                 onStack[v] = true;
@@ -64,7 +64,7 @@ public class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
+                // assert check();
             }
         }
         onStack[v] = false;
@@ -94,24 +94,24 @@ public class DirectedCycle {
      *
      * @return     { description_of_the_return_value }.
      */
-    private boolean check() {
-        if (hasCycle()) {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : cycle()) {
-                if (first == -1) {
-                    first = v;
-                }
-                last = v;
-            }
-            if (first != last) {
-                System.out.println("cycle begins with %d and ends with %d\n"
-                                   + first + last);
-                return false;
-            }
-        }
-        return true;
-    }
+    // private boolean check() {
+    //     if (hasCycle()) {
+    //         // verify cycle
+    //         int first = -1, last = -1;
+    //         for (int v : cycle()) {
+    //             if (first == -1) {
+    //                 first = v;
+    //             }
+    //             last = v;
+    //         }
+    //         if (first != last) {
+    //             System.out.println("cycle begins with %d and ends with %d\n"
+    //                                + first + last);
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
     /**
      * Determines if bipartite.
      *
