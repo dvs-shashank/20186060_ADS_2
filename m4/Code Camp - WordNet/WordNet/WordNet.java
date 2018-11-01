@@ -55,10 +55,16 @@ public class WordNet {
                 if (tempObj.outdegree(i) == 0) {
                     count++;
                 }
-            } if (count >1) {
-                System.out.println("Multiple roots");
-                return;
             }
+            try {
+                if (count > 1) {
+                    //System.out.println("Multiple roots");
+                    throw new Exception();
+                }
+            } catch (Exception e) {
+                System.out.println("Multiple roots");
+            }
+
             //System.out.println(tempObj);
             if (dc.hasCycle()) {
                 System.out.println("Cycle detected");
