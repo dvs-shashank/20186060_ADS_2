@@ -94,7 +94,8 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-Index -1 out-of-bounds for length 11
+distance = 2, ancestors = b
+distance = 2, ancestors = b
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -108,7 +109,8 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-Index -1 out-of-bounds for length 8
+distance = 2, ancestors = b
+distance = 2, ancestors = b
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -125,7 +127,8 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-Index -1 out-of-bounds for length 11
+distance = 2, ancestors = b
+distance = 2, ancestors = b
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
