@@ -42,8 +42,8 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-distance = 2, ancestors = entity
-distance = 2, ancestors = entity
+distance = 0, ancestors = entity
+distance = 0, ancestors = entity
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -56,8 +56,8 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-distance = 2, ancestors = macromolecule supermolecule
-distance = 2, ancestors = macromolecule supermolecule
+distance = 0, ancestors = macromolecule supermolecule
+distance = 0, ancestors = macromolecule supermolecule
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -67,8 +67,8 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-distance = 2, ancestors = wax
-distance = 2, ancestors = wax
+distance = 0, ancestors = wax
+distance = 0, ancestors = wax
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -80,7 +80,8 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-Index -1 out-of-bounds for length 6
+distance = 0, ancestors = b
+distance = 0, ancestors = b
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -97,8 +98,8 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-distance = 2, ancestors = b
-distance = 2, ancestors = b
+distance = 0, ancestors = b
+distance = 0, ancestors = b
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -112,8 +113,8 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-distance = 2, ancestors = b
-distance = 2, ancestors = b
+distance = 0, ancestors = b
+distance = 0, ancestors = b
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -130,8 +131,8 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-distance = 2, ancestors = b
-distance = 2, ancestors = b
+distance = 0, ancestors = b
+distance = 0, ancestors = b
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -211,8 +212,8 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-distance = 2, ancestors = whole unit
-distance = 2, ancestors = whole unit
+distance = 0, ancestors = whole unit
+distance = 0, ancestors = whole unit
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

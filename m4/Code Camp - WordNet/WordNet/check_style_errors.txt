@@ -405,19 +405,17 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:9:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:9:23: Parameter v should be final. [FinalParameters]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:9:44: Parameter w should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:10:28: '99999999' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:11: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:12: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:13: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:28: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:29:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:29:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:29:25: Parameter v should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:29:46: Parameter w should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:30: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:31: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:32:28: '99999999' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:25: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:26:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:26:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:26:25: Parameter v should be final. [FinalParameters]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:26:46: Parameter w should be final. [FinalParameters]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:27: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\SAP.java:28: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 19 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:4: Class Solution should be declared as final. [FinalClass]
