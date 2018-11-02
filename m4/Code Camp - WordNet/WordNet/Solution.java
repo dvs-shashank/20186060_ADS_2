@@ -26,6 +26,7 @@ class Solution {
 			for (int i = 0; i < queryNames.length; i++) {
 				if (queryNames[i].equals("null")) {
 					System.out.println("IllegalArgumentException");
+					return;
 				} else {
 					System.out.println("distance = " + wordNetObject.distance(queryNames[0],queryNames[1]));
 					//System.out.println("ancestors = " + wordNetObject.ancestor(queryNames[0],queryNames[1]));

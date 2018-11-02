@@ -47,7 +47,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:80)
 	at SAP.ancestor(SAP.java:30)
 	at WordNet.distance(WordNet.java:129)
-	at Solution.main(Solution.java:30)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -64,7 +64,7 @@ File not found
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
 	at LinearProbingHashST.get(LinearProbingHashST.java:161)
 	at WordNet.distance(WordNet.java:126)
-	at Solution.main(Solution.java:30)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -78,7 +78,7 @@ File not found
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -4
 	at LinearProbingHashST.get(LinearProbingHashST.java:161)
 	at WordNet.distance(WordNet.java:126)
-	at Solution.main(Solution.java:30)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -252,7 +252,6 @@ Your Output:
 14: 13 
 
 IllegalArgumentException
-IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -278,12 +277,6 @@ Your Output:
 14: 13 
 
 IllegalArgumentException
-Exception in thread "main" java.lang.IllegalArgumentException: argument is null
-	at BreadthFirstDirectedPaths.validateVertices(BreadthFirstDirectedPaths.java:181)
-	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:85)
-	at SAP.ancestor(SAP.java:30)
-	at WordNet.distance(WordNet.java:129)
-	at Solution.main(Solution.java:30)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -312,7 +305,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:80)
 	at SAP.ancestor(SAP.java:30)
 	at WordNet.distance(WordNet.java:129)
-	at Solution.main(Solution.java:30)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

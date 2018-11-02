@@ -416,9 +416,9 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:22: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:28: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:30: Line is longer than 80 characters (found 128). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:30:113: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:31: Line is longer than 80 characters (found 131). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:31: Line is longer than 80 characters (found 128). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:31:113: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:32: Line is longer than 80 characters (found 131). [LineLength]
 Audit done.
 Checkstyle ends with 9 errors.
 Starting audit...
