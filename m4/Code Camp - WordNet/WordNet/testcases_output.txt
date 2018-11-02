@@ -44,6 +44,9 @@ distance = 10, ancestor = entity
 Your Output: 
 distance = 7, ancestors = entity
 distance = 7, ancestors = entity
+distance = 10, ancestors = entity
+distance = 10, ancestors = entity
+null
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -58,6 +61,17 @@ distance = 1, ancestor = animal_oil
 Your Output: 
 distance = 7, ancestors = macromolecule supermolecule
 distance = 7, ancestors = macromolecule supermolecule
+distance = 7, ancestors = macromolecule supermolecule
+distance = 7, ancestors = macromolecule supermolecule
+distance = 9, ancestors = macromolecule supermolecule
+distance = 9, ancestors = macromolecule supermolecule
+distance = 8, ancestors = macromolecule supermolecule
+distance = 8, ancestors = macromolecule supermolecule
+distance = 7, ancestors = lipid lipide lipoid
+distance = 7, ancestors = lipid lipide lipoid
+distance = 1, ancestors = animal_oil
+distance = 1, ancestors = animal_oil
+null
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -69,6 +83,11 @@ distance = 2, ancestor = wax
 Your Output: 
 distance = 3, ancestors = wax
 distance = 3, ancestors = wax
+distance = 13, ancestors = thing
+distance = 13, ancestors = thing
+distance = 2, ancestors = wax
+distance = 2, ancestors = wax
+null
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -82,6 +101,15 @@ distance = 0, ancestor = f
 Your Output: 
 distance = 0, ancestors = b
 distance = 0, ancestors = b
+distance = 0, ancestors = c
+distance = 0, ancestors = c
+distance = 0, ancestors = d
+distance = 0, ancestors = d
+distance = 0, ancestors = e
+distance = 0, ancestors = e
+distance = 0, ancestors = f
+distance = 0, ancestors = f
+null
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -100,6 +128,25 @@ distance = 1, ancestor = k
 Your Output: 
 distance = 1, ancestors = b
 distance = 1, ancestors = b
+distance = 2, ancestors = c
+distance = 2, ancestors = c
+distance = 4, ancestors = c
+distance = 4, ancestors = c
+distance = 3, ancestors = c
+distance = 3, ancestors = c
+distance = 4, ancestors = c
+distance = 4, ancestors = c
+distance = 4, ancestors = c
+distance = 4, ancestors = c
+distance = 3, ancestors = c
+distance = 3, ancestors = c
+distance = 3, ancestors = i
+distance = 3, ancestors = i
+distance = 2, ancestors = j
+distance = 2, ancestors = j
+distance = 1, ancestors = k
+distance = 1, ancestors = k
+null
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -115,6 +162,19 @@ distance = 1, ancestor = h
 Your Output: 
 distance = 1, ancestors = b
 distance = 1, ancestors = b
+distance = 2, ancestors = c
+distance = 2, ancestors = c
+distance = 2, ancestors = h
+distance = 2, ancestors = h
+distance = 5, ancestors = h
+distance = 5, ancestors = h
+distance = 4, ancestors = h
+distance = 4, ancestors = h
+distance = 3, ancestors = h
+distance = 3, ancestors = h
+distance = 1, ancestors = h
+distance = 1, ancestors = h
+null
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -133,6 +193,25 @@ distance = 4, ancestor = f
 Your Output: 
 distance = 1, ancestors = b
 distance = 1, ancestors = b
+distance = 1, ancestors = c
+distance = 1, ancestors = c
+distance = 1, ancestors = d
+distance = 1, ancestors = d
+distance = 1, ancestors = e
+distance = 1, ancestors = e
+distance = 2, ancestors = f
+distance = 2, ancestors = f
+distance = 3, ancestors = f
+distance = 3, ancestors = f
+distance = 3, ancestors = f
+distance = 3, ancestors = f
+distance = 3, ancestors = f
+distance = 3, ancestors = f
+distance = 3, ancestors = f
+distance = 3, ancestors = f
+distance = 4, ancestors = f
+distance = 4, ancestors = f
+null
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -214,6 +293,36 @@ distance = 8, ancestor = abstraction abstract_entity
 Your Output: 
 distance = 11, ancestors = whole unit
 distance = 11, ancestors = whole unit
+distance = 8, ancestors = organism being
+distance = 8, ancestors = organism being
+distance = 14, ancestors = entity
+distance = 14, ancestors = entity
+distance = 13, ancestors = object physical_object
+distance = 13, ancestors = object physical_object
+distance = 2, ancestors = decade decennary decennium
+distance = 2, ancestors = decade decennary decennium
+distance = 8, ancestors = substance
+distance = 8, ancestors = substance
+distance = 2, ancestors = port
+distance = 2, ancestors = port
+distance = 2, ancestors = letter letter_of_the_alphabet alphabetic_character
+distance = 2, ancestors = letter letter_of_the_alphabet alphabetic_character
+distance = 2, ancestors = letter letter_of_the_alphabet alphabetic_character
+distance = 2, ancestors = letter letter_of_the_alphabet alphabetic_character
+distance = 12, ancestors = person individual someone somebody mortal soul
+distance = 12, ancestors = person individual someone somebody mortal soul
+distance = 15, ancestors = abstraction abstract_entity
+distance = 15, ancestors = abstraction abstract_entity
+distance = 0, ancestors = 9/11 9-11 September_11 Sept._11 Sep_11
+distance = 0, ancestors = 9/11 9-11 September_11 Sept._11 Sep_11
+distance = 2, ancestors = digit figure
+distance = 2, ancestors = digit figure
+distance = 13, ancestors = abstraction abstract_entity
+distance = 13, ancestors = abstraction abstract_entity
+distance = 12, ancestors = abstraction abstract_entity
+distance = 12, ancestors = abstraction abstract_entity
+distance = 0, ancestors = era epoch
+distance = 0, ancestors = era epoch
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

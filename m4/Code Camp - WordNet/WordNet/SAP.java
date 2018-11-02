@@ -25,7 +25,6 @@ public class SAP {
                 int distance = bfsV.distTo(i) + bfsW.distTo(i);
                 if (distance < distanceGlobal) {
                     //shortPath = distance;
-                    // System.out.println(distance);
                     this.distanceGlobal = distance;
                     // System.out.println("lkj");
                     // System.out.println(distanceGlobal);
