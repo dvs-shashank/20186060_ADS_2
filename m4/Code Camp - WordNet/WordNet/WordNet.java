@@ -106,7 +106,7 @@ public class WordNet {
                 System.out.println(tempObj);
             }
         } catch (Exception e) {
-            System.out.println("File not found");
+            System.out.println("File not founddddddddddddd");
         }
 
     }
