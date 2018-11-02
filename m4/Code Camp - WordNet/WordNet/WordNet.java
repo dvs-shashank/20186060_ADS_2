@@ -83,12 +83,28 @@ public class WordNet {
                     //System.out.println(v+"\t"+i);
                     tempObj.addEdge(v, Integer.parseInt(synsetArray[i]));
                 }
-                display(tempObj);
                 // int v = Integer.parseInt(synsetArray[0]);
                 // int w = Integer.parseInt(fileArray[1]);
                 //tempObj.addEdge(v, w);
             }
+            DirectedCycle dc = new DirectedCycle(tempObj);
+            int count = 0;
+            for (int i = 0; i < numOfVertices; i++) {
+                if (tempObj.outdegree(i) == 0) {
+                    count++;
+                }
 
+            }
+            if (count > 1) {
+                System.out.println("Multiple roots");
+                return;
+            }
+            //System.out.println(tempObj);
+            if (dc.hasCycle()) {
+                System.out.println("Cycle detected");
+            } else {
+                System.out.println(tempObj);
+            }
         } catch (Exception e) {
             System.out.println("File not founddddddddddddd");
         }
@@ -132,25 +148,8 @@ public class WordNet {
         //return "";
     }
 
-    public void display(Digraph tempObj) {
-        DirectedCycle dc = new DirectedCycle(tempObj);
-        int count = 0;
-        for (int i = 0; i < numOfVertices; i++) {
-            if (tempObj.outdegree(i) == 0) {
-                count++;
-            }
+    public void display() {
 
-        }
-        if (count > 1) {
-            System.out.println("Multiple roots");
-            return;
-        }
-        //System.out.println(tempObj);
-        if (dc.hasCycle()) {
-            System.out.println("Cycle detected");
-        } else {
-            System.out.println(tempObj);
-        }
     }
 
     // // do unit testing of this class
