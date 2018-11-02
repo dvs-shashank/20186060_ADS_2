@@ -21,6 +21,7 @@ class Solution {
 		if (implementationType.equals("Graph")) {
 			WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
 		} else {
+			//WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
 			String[] queryNames = scan.readString().split(" ");
 			for (int i = 0; i < queryNames.length; i++) {
 				if (queryNames[i].equals("null")) {
@@ -28,5 +29,6 @@ class Solution {
 				}
 			}
 		}
+		//wordNet.display();
 	}
 }

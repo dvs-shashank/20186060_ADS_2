@@ -5,9 +5,25 @@ import java.util.ArrayList;
  */
 public class WordNet {
     /**
+     * { var_description }
+     */
+    private ArrayList<String> synsetsList = new ArrayList<String>();
+    /**
      * { item_description }.
      */
     private LinearProbingHashST<String, ArrayList<Integer>> hashObj;
+    /**
+     * { var_description }
+     */
+    private SAP sapObj;
+    /**
+     * { var_description }
+     */
+    Digraph digraphObj;
+    /**
+     * { var_description }
+     */
+    int numOfVertices;
     /**
      * Constructs the object.
      *
@@ -15,7 +31,11 @@ public class WordNet {
      * @param      hypernyms  The hypernyms
      */
     public WordNet(String synsets, String hypernyms) {
+        //reverseSt = new LinearProbingHashST<Integer, String>();
+        numOfVertices = 0;
+        hashObj = new LinearProbingHashST<String, ArrayList<Integer>>();
         parseMySynsetFile(synsets, hypernyms);
+        sapObj = new SAP(digraphObj);
     }
     /**
      * parseMySynsetFile.
@@ -24,20 +44,29 @@ public class WordNet {
      */
     void parseMySynsetFile(String filename, String hypernyms) {
         int id = 0;
-        int numOfVertices = 0;
+        //int numOfVertices = 0;
         try {
             ArrayList listObj = new ArrayList<Integer>();
             In inObj = new In(filename);
             while (!inObj.isEmpty()) {
-                numOfVertices++;
-                String[] fileArray = inObj.readString().split(",");
-                id = Integer.parseInt(fileArray[0]);
-                String[] nounsArray = fileArray[1].split(" ");
-                for (int i =0; i < nounsArray.length; i++) {
-                    //hashObj.put(nounsArray[i], listObj.add(id));
+                this.numOfVertices++;
+                String[] synsetArray = inObj.readString().split(",");
+                id = Integer.parseInt(synsetArray[0]);
+                listObj.add(id);
+                synsetsList.add(id, synsetArray[1]);
+                String[] nounsArray = synsetArray[1].split(" ");
+                for (int i = 0; i < nounsArray.length; i++) {
+                    //reverseSt.put(Integer.parseInt(synsetArray[0]), synsetArray[1]);
+                    if (hashObj.contains(nounsArray[i])) {
+                        listObj.addAll(hashObj.get(nounsArray[i]));
+                        hashObj.put(nounsArray[i], listObj);
+                    } else {
+                        hashObj.put(nounsArray[i], listObj);
+                    }
                 }
             }
-            Digraph digraphObj = new Digraph(numOfVertices);
+            //Digraph digraphObj = new Digraph(numOfVertices);
+            digraphObj = new Digraph(numOfVertices);
             parseMyHypernymsFile(hypernyms, digraphObj, numOfVertices);
         } catch (Exception e) {
             System.out.println("File not found");
@@ -48,13 +77,13 @@ public class WordNet {
         try {
             In inObj = new In(hypernyms);
             while (!inObj.isEmpty()) {
-                String[] fileArray = inObj.readString().split(",");
-                int v = Integer.parseInt(fileArray[0]);
-                for (int i = 1; i < fileArray.length; i++) {
+                String[] synsetArray = inObj.readString().split(",");
+                int v = Integer.parseInt(synsetArray[0]);
+                for (int i = 1; i < synsetArray.length; i++) {
                     //System.out.println(v+"\t"+i);
-                    tempObj.addEdge(v, Integer.parseInt(fileArray[i]));
+                    tempObj.addEdge(v, Integer.parseInt(synsetArray[i]));
                 }
-                // int v = Integer.parseInt(fileArray[0]);
+                // int v = Integer.parseInt(synsetArray[0]);
                 // int w = Integer.parseInt(fileArray[1]);
                 //tempObj.addEdge(v, w);
             }
@@ -62,9 +91,9 @@ public class WordNet {
             int count = 0;
             for (int i = 0; i < numOfVertices; i++) {
                 if (tempObj.outdegree(i) == 0) {
-                    count++;
+                    count++;            }
+
                 }
-            }
             if (count > 1) {
                 System.out.println("Multiple roots");
                 return;
@@ -82,19 +111,49 @@ public class WordNet {
     }
 
     // // returns all WordNet nouns
-    // public Iterable<String> nouns()
+    public Iterable<String> nouns() {
+        return hashObj.keys();
+    }
 
     //is the word a WordNet noun?
     public boolean isNoun(String word) {
-        return false;
+        return hashObj.contains(word);
     }
 
     // // distance between nounA and nounB (defined below)
-    // public int distance(String nounA, String nounB)
+    public int distance(String nounA, String nounB) {
+        Iterable<Integer> noun1 = hashObj.get(nounA);
+        Iterable<Integer> noun2 = hashObj.get(nounA);
+        //SAP sapObj = new SAP();
+        int id = sapObj.ancestor(noun1, noun2);
+        if (isNoun(nounA) == false || isNoun(nounB) == false) {
+            //Write inside try catch.
+            System.out.println("IllegalArgumentException");
+        }
+
+        return sapObj.length(noun1, noun2);
+    }
 
     // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
     // // in a shortest ancestral path (defined below)
-    // public String sap(String nounA, String nounB)
+    public String sap(String nounA, String nounB) {
+        Iterable<Integer> noun1 = hashObj.get(nounA);
+        Iterable<Integer> noun2 = hashObj.get(nounB);
+        // if (!isNoun(nounA) || !isNoun(nounB)) {
+        //     System.out.println("IllegalArgumentException");
+        // }
+        int id = sapObj.ancestor(noun1, noun2);
+        return synsetsList.get(id);
+        //return "";
+    }
+
+    // public void display() {
+    //     String sg = "";
+    //     for (int i = 0; i < this.numOfVertices; i++) {
+    //         sg += "distance = " +  "ancestor = ";
+    //     }
+    //     System.out.println(sg);
+    // }
 
     // // do unit testing of this class
     // public static void main(String[] args)
