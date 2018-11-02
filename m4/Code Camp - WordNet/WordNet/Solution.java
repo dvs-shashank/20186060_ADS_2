@@ -15,14 +15,14 @@ class Solution {
 	 */
 	public static void main(final String[] args) {
 		In scan = new In();
-		String synsetFileName = scan.readString();
-		String hypernymFileName = scan.readString();
-		String implementationType = scan.readString();
+		String synsetFileName = scan.readLine();
+		String hypernymFileName = scan.readLine();
+		String implementationType = scan.readLine();
 		if (implementationType.equals("Graph")) {
 			WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
 		} else {
 			WordNet wordNetObject = new WordNet(synsetFileName, hypernymFileName);
-			String[] queryNames = scan.readString().split(" ");
+			String[] queryNames = scan.readLine().split(" ");
 			for (int i = 0; i < queryNames.length; i++) {
 				if (queryNames[i].equals("null")) {
 					System.out.println("IllegalArgumentException");

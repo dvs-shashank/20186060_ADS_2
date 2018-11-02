@@ -50,7 +50,7 @@ public class WordNet {
             In inObj = new In(filename);
             while (!inObj.isEmpty()) {
                 this.numOfVertices++;
-                String[] synsetArray = inObj.readString().split(",");
+                String[] synsetArray = inObj.readLine().split(",");
                 id = Integer.parseInt(synsetArray[0]);
                 listObj.add(id);
                 synsetsList.add(id, synsetArray[1]);
@@ -77,7 +77,7 @@ public class WordNet {
         try {
             In inObj = new In(hypernyms);
             while (!inObj.isEmpty()) {
-                String[] synsetArray = inObj.readString().split(",");
+                String[] synsetArray = inObj.readLine().split(",");
                 int v = Integer.parseInt(synsetArray[0]);
                 for (int i = 1; i < synsetArray.length; i++) {
                     //System.out.println(v+"\t"+i);

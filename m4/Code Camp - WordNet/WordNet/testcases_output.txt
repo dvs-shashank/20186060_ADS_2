@@ -43,7 +43,10 @@ distance = 10, ancestor = entity
 
 Your Output: 
 File not found
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+Exception in thread "main" java.lang.NullPointerException
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:80)
+	at SAP.ancestor(SAP.java:30)
+	at WordNet.distance(WordNet.java:128)
 	at Solution.main(Solution.java:30)
 ----------------------------------------
 
@@ -58,7 +61,9 @@ distance = 1, ancestor = animal_oil
 
 Your Output: 
 File not found
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at LinearProbingHashST.get(LinearProbingHashST.java:161)
+	at WordNet.distance(WordNet.java:125)
 	at Solution.main(Solution.java:30)
 ----------------------------------------
 
@@ -70,7 +75,9 @@ distance = 2, ancestor = wax
 
 Your Output: 
 File not found
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -4
+	at LinearProbingHashST.get(LinearProbingHashST.java:161)
+	at WordNet.distance(WordNet.java:125)
 	at Solution.main(Solution.java:30)
 ----------------------------------------
 
@@ -91,8 +98,8 @@ Your Output:
 4: 5 
 5: 0 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:30)
+distance = 99999999
+distance = 99999999
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -122,8 +129,8 @@ Your Output:
 9: 8 
 10: 9 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:30)
+distance = 99999999
+distance = 99999999
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -147,8 +154,8 @@ Your Output:
 6: 3 
 7: 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:30)
+distance = 99999999
+distance = 99999999
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -178,8 +185,8 @@ Your Output:
 9: 5 
 10: 9 8 7 6 
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:30)
+distance = 99999999
+distance = 99999999
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -245,6 +252,7 @@ Your Output:
 14: 13 
 
 IllegalArgumentException
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -270,6 +278,12 @@ Your Output:
 14: 13 
 
 IllegalArgumentException
+Exception in thread "main" java.lang.IllegalArgumentException: argument is null
+	at BreadthFirstDirectedPaths.validateVertices(BreadthFirstDirectedPaths.java:181)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:85)
+	at SAP.ancestor(SAP.java:30)
+	at WordNet.distance(WordNet.java:128)
+	at Solution.main(Solution.java:30)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -294,7 +308,10 @@ distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
 File not found
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+Exception in thread "main" java.lang.NullPointerException
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:80)
+	at SAP.ancestor(SAP.java:30)
+	at WordNet.distance(WordNet.java:128)
 	at Solution.main(Solution.java:30)
 ----------------------------------------
 
