@@ -22,14 +22,14 @@ class Solution {
 			WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
 			return;
 		} else {
-			//WordNet wordNetObject = new WordNet(synsetFileName, hypernymFileName);
 			String[] queryNames = scan.readLine().split(" ");
 			for (int i = 0; i < queryNames.length; i++) {
 				if (queryNames[i].equals("null")) {
 					System.out.println("IllegalArgumentException");
 					return;
 				} else {
-					//System.out.println("distance = " + wordNetObject.distance(queryNames[0],queryNames[1]));
+					WordNet wordNetObject = new WordNet(synsetFileName, hypernymFileName);
+					System.out.println("distance = " + wordNetObject.distance(queryNames[0],queryNames[1]));
 					//System.out.println("ancestors = " + wordNetObject.ancestor(queryNames[0],queryNames[1]));
 				}
 			}
