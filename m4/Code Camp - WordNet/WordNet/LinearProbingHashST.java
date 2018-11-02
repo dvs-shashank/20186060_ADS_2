@@ -1,43 +1,4 @@
-/******************************************************************************
- *  Compilation:  javac LinearProbingHashST.java
- *  Execution:    java LinearProbingHashST < input.txt
- *  Dependencies: StdIn.java StdOut.java
- *  Data files:   https://algs4.cs.princeton.edu/34hash/tinyST.txt
- *
- *  Symbol-table implementation with linear-probing hash table.
- *
- ******************************************************************************/
 
-/**
- *  The {@code LinearProbingHashST} class represents a symbol table of generic
- *  key-value pairs.
- *  It supports the usual <em>put</em>, <em>get</em>, <em>contains</em>,
- *  <em>delete</em>, <em>size</em>, and <em>is-empty</em> methods.
- *  It also provides a <em>keys</em> method for iterating over all of the keys.
- *  A symbol table implements the <em>associative array</em> abstraction:
- *  when associating a value with a key that is already in the symbol table,
- *  the convention is to replace the old value with the new value.
- *  Unlike {@link java.util.Map}, this class uses the convention that
- *  values cannot be {@code null}—setting the
- *  value associated with a key to {@code null} is equivalent to deleting the key
- *  from the symbol table.
- *  <p>
- *  This implementation uses a linear probing hash table. It requires that
- *  the key type overrides the {@code equals()} and {@code hashCode()} methods.
- *  The expected time per <em>put</em>, <em>contains</em>, or <em>remove</em>
- *  operation is constant, subject to the uniform hashing assumption.
- *  The <em>size</em>, and <em>is-empty</em> operations take constant time.
- *  Construction takes constant time.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/34hash">Section 3.4</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *  For other implementations, see {@link ST}, {@link BinarySearchST},
- *  {@link SequentialSearchST}, {@link BST}, {@link RedBlackBST}, and
- *  {@link SeparateChainingHashST},
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- */
 public class LinearProbingHashST<Key, Value> {
     private static final int INIT_CAPACITY = 4;
 
@@ -100,7 +61,7 @@ public class LinearProbingHashST<Key, Value> {
 
     // hash function for keys - returns value between 0 and M-1
     private int hash(Key key) {
-        return (11 * key.hashCode()) % m;
+        return (key.hashCode() & 0x7fffffff) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
@@ -117,7 +78,7 @@ public class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old
+     * Inserts the specified key-value pair into the symbol table, overwriting the old 
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
@@ -135,7 +96,7 @@ public class LinearProbingHashST<Key, Value> {
         }
 
         // double table size if 50% full
-        if (n >= m / 2) resize(2 * m);
+        if (n >= m/2) resize(2*m);
 
         int i;
         for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
@@ -165,8 +126,8 @@ public class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * Removes the specified key and its associated value from this symbol table
-     * (if the key is in this symbol table).
+     * Removes the specified key and its associated value from this symbol table     
+     * (if the key is in this symbol table).    
      *
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -201,7 +162,7 @@ public class LinearProbingHashST<Key, Value> {
         n--;
 
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m / 8) resize(m / 2);
+        if (n > 0 && n <= m/8) resize(m/2);
 
         assert check();
     }
@@ -225,8 +186,8 @@ public class LinearProbingHashST<Key, Value> {
     private boolean check() {
 
         // check that hash table is at most 50% full
-        if (m < 2 * n) {
-            System.out.println("Hash table size m = " + m + "; array size n = " + n);
+        if (m < 2*n) {
+            System.err.println("Hash table size m = " + m + "; array size n = " + n);
             return false;
         }
 
@@ -234,27 +195,11 @@ public class LinearProbingHashST<Key, Value> {
         for (int i = 0; i < m; i++) {
             if (keys[i] == null) continue;
             else if (get(keys[i]) != vals[i]) {
-                System.out.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
+                System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
                 return false;
             }
         }
         return true;
-    }
-    public String display() {
-        String s = "{";
-        int i;
-        for (i = 0; i < keys.length - 1; i++) {
-            if (keys[i] != null) {
-                s += keys[i] + ":" + vals[i] + ", ";
-            }
-        }
-        if (keys[i] != null) {
-            s += keys[i] + ":" + vals[i];
-        } else {
-            s = s.substring(0, s.length() - 2);
-        }
-        s += "}";
-        return s;
     }
 
 }

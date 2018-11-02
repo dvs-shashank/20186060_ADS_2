@@ -42,7 +42,8 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
--4
+distance = 2, ancestors = entity
+distance = 2, ancestors = entity
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -55,7 +56,8 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
--4
+distance = 2, ancestors = macromolecule supermolecule
+distance = 2, ancestors = macromolecule supermolecule
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -65,7 +67,8 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
--2
+distance = 2, ancestors = wax
+distance = 2, ancestors = wax
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -208,7 +211,8 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
--14
+distance = 2, ancestors = whole unit
+distance = 2, ancestors = whole unit
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########
