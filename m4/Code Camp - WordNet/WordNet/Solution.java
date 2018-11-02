@@ -23,7 +23,13 @@ class Solution {
 				WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
 				wordNet.display();
 				return;
-			} else {
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			//wordNet.display();
+		}
+		try {
+			if (implementationType.equals("Queries")) {
 				String[] queryNames = scan.readLine().split(" ");
 				for (int i = 0; i < queryNames.length; i++) {
 					if (queryNames[i].equals("null")) {
@@ -31,7 +37,8 @@ class Solution {
 						//return;
 					}
 					WordNet wordNetObject = new WordNet(synsetFileName, hypernymFileName);
-					System.out.println("distance = " + wordNetObject.distance(queryNames[0], queryNames[1]));
+					System.out.println("distance = " + wordNetObject.distance(queryNames[0], queryNames[1]) +
+					                   ", ancestors = " + wordNetObject.sap(queryNames[0], queryNames[1]));
 					//System.out.println("ancestors = " + wordNetObject.ancestor(queryNames[0],queryNames[1]));
 				}
 			}
@@ -39,5 +46,6 @@ class Solution {
 			System.out.println(e.getMessage());
 			//wordNet.display();
 		}
+
 	}
 }

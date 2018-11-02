@@ -414,13 +414,15 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:4: Class Solution should be declared as final. [FinalClass]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:23: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:27: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:30: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:33: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:34: Line is longer than 80 characters (found 129). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:35: Line is longer than 80 characters (found 131). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:33: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:36: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:39: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:40: Line is longer than 80 characters (found 129). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:40:129: '+' should be on a new line. [OperatorWrap]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:41: Line is longer than 80 characters (found 127). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:42: Line is longer than 80 characters (found 131). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
@@ -622,14 +624,12 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:101:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:101:25: Parameter nounA should be final. [FinalParameters]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:101:39: Parameter nounB should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:106:27: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:106:53: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:114: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:116:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:116:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:116:23: Parameter nounA should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:116:37: Parameter nounB should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:127:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'display' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'display' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:127:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:110: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:112:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:112:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:112:23: Parameter nounA should be final. [FinalParameters]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:112:37: Parameter nounB should be final. [FinalParameters]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:123:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'display' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'display' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\WordNet.java:123:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 44 errors.
+Checkstyle ends with 42 errors.

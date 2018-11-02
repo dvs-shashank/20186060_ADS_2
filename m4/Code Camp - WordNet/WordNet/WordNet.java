@@ -101,13 +101,9 @@ public class WordNet {
     public int distance(String nounA, String nounB) {
         Iterable<Integer> noun1 = hashObj.get(nounA);
         Iterable<Integer> noun2 = hashObj.get(nounA);
-        //SAP sapObj = new SAP();
-        int id = sapObj.ancestor(noun1, noun2);
-        if (isNoun(nounA) == false || isNoun(nounB) == false) {
-            //Write inside try catch.
-            System.out.println("IllegalArgumentException");
+        if (!isNoun(nounA) || !isNoun(nounB)) {
+           System.out.println("IllegalArgumentException");
         }
-
         return sapObj.length(noun1, noun2);
     }
 
@@ -116,9 +112,9 @@ public class WordNet {
     public String sap(String nounA, String nounB) {
         Iterable<Integer> noun1 = hashObj.get(nounA);
         Iterable<Integer> noun2 = hashObj.get(nounB);
-        // if (!isNoun(nounA) || !isNoun(nounB)) {
-        //     System.out.println("IllegalArgumentException");
-        // }
+        if (!isNoun(nounA) || !isNoun(nounB)) {
+           System.out.println("IllegalArgumentException");
+        }
         int id = sapObj.ancestor(noun1, noun2);
         return synsetsList.get(id);
         //return "";
