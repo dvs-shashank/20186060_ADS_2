@@ -106,7 +106,7 @@ public class WordNet {
            System.out.println("IllegalArgumentException");
         }
         Iterable<Integer> noun1 = hashObj.get(nounA);
-        Iterable<Integer> noun2 = hashObj.get(nounA);
+        Iterable<Integer> noun2 = hashObj.get(nounB);
         return sapObj.length(noun1, noun2);
     }
 
