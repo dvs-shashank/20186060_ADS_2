@@ -1,11 +1,11 @@
 public class SAP {
     private Digraph graph;
     // constructor takes a digraph (not necessarily a DAG)
-    int distanceGlobal;
+    private int distanceGlobal;
 
     public SAP(Digraph graph) {
         this.graph = graph;
-        this.distanceGlobal = 0;
+        // distanceGlobal = 0;
     }
     // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
     public int length(Iterable<Integer> v, Iterable<Integer> w) {

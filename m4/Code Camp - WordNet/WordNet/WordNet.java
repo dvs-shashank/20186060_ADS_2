@@ -102,11 +102,11 @@ public class WordNet {
 
     // // distance between nounA and nounB (defined below)
     public int distance(String nounA, String nounB) {
-        Iterable<Integer> noun1 = hashObj.get(nounA);
-        Iterable<Integer> noun2 = hashObj.get(nounA);
         if (!isNoun(nounA) || !isNoun(nounB)) {
            System.out.println("IllegalArgumentException");
         }
+        Iterable<Integer> noun1 = hashObj.get(nounA);
+        Iterable<Integer> noun2 = hashObj.get(nounA);
         return sapObj.length(noun1, noun2);
     }
 
