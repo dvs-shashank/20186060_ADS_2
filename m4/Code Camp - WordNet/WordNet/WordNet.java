@@ -46,28 +46,23 @@ public class WordNet {
         int id = 0;
         //int numOfVertices = 0;
         try {
-            //ArrayList listObj = new ArrayList<Integer>();
+            ArrayList listObj = new ArrayList<Integer>();
             In inObj = new In(filename);
             while (!inObj.isEmpty()) {
                 this.numOfVertices++;
                 String[] synsetArray = inObj.readLine().split(",");
                 id = Integer.parseInt(synsetArray[0]);
+                listObj.add(id);
                 synsetsList.add(id, synsetArray[1]);
                 String[] nounsArray = synsetArray[1].split(" ");
                 for (int i = 0; i < nounsArray.length; i++) {
-                    ArrayList<Integer> listObj;
                     //reverseSt.put(Integer.parseInt(synsetArray[0]), synsetArray[1]);
                     if (hashObj.contains(nounsArray[i])) {
-                        listObj = hashObj.get(nounsArray[i]);
-                        listObj.add(id);
-                        //listObj.addAll(hashObj.get(nounsArray[i]));
-                        //hashObj.put(nounsArray[i], listObj);
+                        listObj.addAll(hashObj.get(nounsArray[i]));
+                        hashObj.put(nounsArray[i], listObj);
                     } else {
-                        //hashObj.put(nounsArray[i], listObj);
-                        listObj = new ArrayList<Integer>();
-                        listObj.add(id);
+                        hashObj.put(nounsArray[i], listObj);
                     }
-                    hashObj.put(nounsArray[i], listObj);
                 }
             }
             //Digraph digraphObj = new Digraph(numOfVertices);
@@ -92,12 +87,29 @@ public class WordNet {
                 // int w = Integer.parseInt(fileArray[1]);
                 //tempObj.addEdge(v, w);
             }
+            DirectedCycle dc = new DirectedCycle(tempObj);
+            int count = 0;
+            for (int i = 0; i < numOfVertices; i++) {
+                if (tempObj.outdegree(i) == 0) {
+                    count++;
+                }
+
+            }
+            if (count > 1) {
+                System.out.println("Multiple roots");
+                return;
+            }
+            //System.out.println(tempObj);
+            if (dc.hasCycle()) {
+                System.out.println("Cycle detected");
+            } else {
+                System.out.println(tempObj);
+            }
         } catch (Exception e) {
             System.out.println("File not found");
         }
 
     }
-
 
     // // returns all WordNet nouns
     public Iterable<String> nouns() {
