@@ -47,7 +47,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:80)
 	at SAP.ancestor(SAP.java:30)
 	at WordNet.distance(WordNet.java:129)
-	at Solution.main(Solution.java:31)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -64,7 +64,7 @@ File not found
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
 	at LinearProbingHashST.get(LinearProbingHashST.java:161)
 	at WordNet.distance(WordNet.java:126)
-	at Solution.main(Solution.java:31)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -78,7 +78,7 @@ File not found
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -4
 	at LinearProbingHashST.get(LinearProbingHashST.java:161)
 	at WordNet.distance(WordNet.java:126)
-	at Solution.main(Solution.java:31)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -305,7 +305,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:80)
 	at SAP.ancestor(SAP.java:30)
 	at WordNet.distance(WordNet.java:129)
-	at Solution.main(Solution.java:31)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

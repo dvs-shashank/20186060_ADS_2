@@ -20,6 +20,7 @@ class Solution {
 		String implementationType = scan.readLine();
 		if (implementationType.equals("Graph")) {
 			WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
+			return;
 		} else {
 			WordNet wordNetObject = new WordNet(synsetFileName, hypernymFileName);
 			String[] queryNames = scan.readLine().split(" ");
