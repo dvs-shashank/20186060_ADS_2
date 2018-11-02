@@ -1,3 +1,4 @@
+import java.util.Arrays;
 /**
  * Class for solution.
  */
@@ -32,7 +33,8 @@ class Solution {
 			if (implementationType.equals("Queries")) {
 				while (!StdIn.hasNextLine()) {
 				String[] queryNames = scan.readLine().split(" ");
-				for (int i = 0; i < queryNames.length; i++) {
+				// System.out.println(Arrays.toString(queryNames));
+				for (int i = 0; i < queryNames.length - 1; i++) {
 					if (queryNames[i].equals("null")) {
 						throw new Exception("IllegalArgumentException");
 						//return;

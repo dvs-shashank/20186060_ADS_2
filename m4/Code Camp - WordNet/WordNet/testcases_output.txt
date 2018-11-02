@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 15 vertices, 14 edges 
 0: 
@@ -18,22 +18,7 @@ Expected Output:
 14: 13
 
 Your Output: 
-15 vertices, 14 edges 
-0: 
-1: 0 
-2: 0 
-3: 1 
-4: 1 
-5: 1 
-6: 10 
-7: 3 
-8: 3 
-9: 5 
-10: 5 
-11: 10 
-12: 10 
-13: 6 
-14: 13
+
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -214,7 +199,7 @@ distance = 4, ancestors = f
 null
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 8 vertices, 17 edges 
 0: 7 6 5 4 3 1 
@@ -227,15 +212,7 @@ Expected Output:
 7:
 
 Your Output: 
-8 vertices, 17 edges 
-0: 7 6 5 4 3 1 
-1: 7 
-2: 7 6 5 4 3 1 
-3: 7 
-4: 7 
-5: 7 
-6: 7 
-7:
+
 ----------------------------------------
 
 ########## Testcase 9: Passed ##########
@@ -317,12 +294,6 @@ distance = 0, ancestors = 9/11 9-11 September_11 Sept._11 Sep_11
 distance = 0, ancestors = 9/11 9-11 September_11 Sept._11 Sep_11
 distance = 2, ancestors = digit figure
 distance = 2, ancestors = digit figure
-distance = 13, ancestors = abstraction abstract_entity
-distance = 13, ancestors = abstraction abstract_entity
-distance = 12, ancestors = abstraction abstract_entity
-distance = 12, ancestors = abstraction abstract_entity
-distance = 0, ancestors = era epoch
-distance = 0, ancestors = era epoch
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########
