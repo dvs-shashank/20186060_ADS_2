@@ -414,10 +414,10 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:4: Class Solution should be declared as final. [FinalClass]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:22: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:25: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:25: Line is longer than 80 characters (found 96). [LineLength]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:29: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:32: Line is longer than 80 characters (found 128). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:32:113: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:31:40: Must have at least one statement. [EmptyBlock]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:32: Line is longer than 80 characters (found 130). [LineLength]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m4\Code Camp - WordNet\WordNet\Solution.java:33: Line is longer than 80 characters (found 131). [LineLength]
 Audit done.
 Checkstyle ends with 9 errors.
