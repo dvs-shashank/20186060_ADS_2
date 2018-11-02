@@ -18,22 +18,26 @@ class Solution {
 		String synsetFileName = scan.readLine();
 		String hypernymFileName = scan.readLine();
 		String implementationType = scan.readLine();
-		if (implementationType.equals("Graph")) {
-			WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
-			return;
-		} else {
-			String[] queryNames = scan.readLine().split(" ");
-			for (int i = 0; i < queryNames.length; i++) {
-				if (queryNames[i].equals("null")) {
-					System.out.println("IllegalArgumentException");
-					return;
-				} else {
+		try {
+			if (implementationType.equals("Graph")) {
+				WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
+				wordNet.display();
+				return;
+			} else {
+				String[] queryNames = scan.readLine().split(" ");
+				for (int i = 0; i < queryNames.length; i++) {
+					if (queryNames[i].equals("null")) {
+						throw new Exception("IllegalArgumentException");
+						//return;
+					}
 					WordNet wordNetObject = new WordNet(synsetFileName, hypernymFileName);
-					System.out.println("distance = " + wordNetObject.distance(queryNames[0],queryNames[1]));
+					System.out.println("distance = " + wordNetObject.distance(queryNames[0], queryNames[1]));
 					//System.out.println("ancestors = " + wordNetObject.ancestor(queryNames[0],queryNames[1]));
 				}
 			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			//wordNet.display();
 		}
-		//wordNet.display();
 	}
 }
