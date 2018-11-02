@@ -294,6 +294,15 @@ distance = 0, ancestors = 9/11 9-11 September_11 Sept._11 Sep_11
 distance = 0, ancestors = 9/11 9-11 September_11 Sept._11 Sep_11
 distance = 2, ancestors = digit figure
 distance = 2, ancestors = digit figure
+distance = 13, ancestors = abstraction abstract_entity
+distance = 13, ancestors = abstraction abstract_entity
+distance = 12, ancestors = abstraction abstract_entity
+distance = 12, ancestors = abstraction abstract_entity
+distance = 0, ancestors = era epoch
+distance = 0, ancestors = era epoch
+distance = 8, ancestors = abstraction abstract_entity
+distance = 8, ancestors = abstraction abstract_entity
+null
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

@@ -19,9 +19,9 @@ class Solution {
 		String synsetFileName = scan.readLine();
 		String hypernymFileName = scan.readLine();
 		String implementationType = scan.readLine();
+		WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
 		try {
 			if (implementationType.equals("Graph")) {
-				WordNet wordNet = new WordNet(synsetFileName, hypernymFileName);
 				wordNet.display();
 				return;
 			}
@@ -34,14 +34,14 @@ class Solution {
 				while (!StdIn.hasNextLine()) {
 				String[] queryNames = scan.readLine().split(" ");
 				// System.out.println(Arrays.toString(queryNames));
-				for (int i = 0; i < queryNames.length - 1; i++) {
+				for (int i = 0; i < queryNames.length; i++) {
 					if (queryNames[i].equals("null")) {
 						throw new Exception("IllegalArgumentException");
 						//return;
 					}
-					WordNet wordNetObject = new WordNet(synsetFileName, hypernymFileName);
-					System.out.println("distance = " + wordNetObject.distance(queryNames[0], queryNames[1]) +
-					                   ", ancestors = " + wordNetObject.sap(queryNames[0], queryNames[1]));
+					//WordNet wordNetObject = new WordNet(synsetFileName, hypernymFileName);
+					System.out.println("distance = " + wordNet.distance(queryNames[0], queryNames[1]) +
+					                   ", ancestors = " + wordNet.sap(queryNames[0], queryNames[1]));
 				}
 			}
 		}
