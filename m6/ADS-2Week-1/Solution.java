@@ -3,19 +3,19 @@
  */
 class PageRank {
 	/**
-	 * { var_description }
+	 * { var_description }.
 	 */
 	Digraph tempDigraph;
 	/**
-	 * { var_description }
+	 * { var_description }.
 	 */
 	double[] initialPageRank;
 	/**
-	 * { var_description }
+	 * { var_description }.
 	 */
 	double[] updatedPageRanks;
 	/**
-	 * { var_description }
+	 * { var_description }.
 	 */
 	int[] inDegreeforVertex;
 
@@ -36,21 +36,35 @@ class PageRank {
 		}
 		display();
 	}
-
+	/**
+	 * { function_description }.
+	 */
 	public void display() {
 		for (int i = 0; i < tempDigraph.V(); i++) {
 			System.out.println(i  + " - " + updatedPageRanks[i]);
 		}
 	}
-
+	/**
+	 * Gets the page rank.
+	 *
+	 * @param      v     { parameter_description }.
+	 *
+	 * @return     The page rank.
+	 */
 	public double getPageRank(int v) {
 		for (int i = 0; i < tempDigraph.V(); i++) {
 			initialPageRank[i] = 1.0 / tempDigraph.V();
 			inDegreeforVertex[i] = tempDigraph.indegree(v);
 			if (inDegreeforVertex[i] == 0.0) {
 				return 0.0;
+				// } else if (tempDigraph.indegree(v) > 1) {
+				// 	int k = tempDigraph.indegree(v);
+				// 	for (int j = 0; j < k - 1; j++) {
+				// 		double y = initialPageRank[j] / inDegreeforVertex[j] ;
+				// 		return y;
+				// 	}
 			} else {
-				double y = initialPageRank[i] / inDegreeforVertex[i];
+				double y = initialPageRank[i] / tempDigraph.outdegree(inDegreeforVertex[i]);
 				return y;
 			}
 		}
