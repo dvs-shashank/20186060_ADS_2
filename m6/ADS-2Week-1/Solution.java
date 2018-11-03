@@ -14,6 +14,10 @@ class PageRank {
 	 * { var_description }
 	 */
 	double[] updatedPageRanks;
+	/**
+	 * { var_description }
+	 */
+	int[] inDegreeforVertex;
 
 	/**
 	 * Constructs the object.
@@ -23,6 +27,7 @@ class PageRank {
 	PageRank(final Digraph digraph) {
 		initialPageRank = new double[100];
 		updatedPageRanks = new double[100];
+		inDegreeforVertex = new int[100];
 		this.tempDigraph = digraph;
 		for (int i = 0; i < digraph.V(); i++) {
 			initialPageRank[i] = 1.0 / tempDigraph.V();
@@ -41,11 +46,11 @@ class PageRank {
 	public double getPageRank(int v) {
 		for (int i = 0; i < tempDigraph.V(); i++) {
 			initialPageRank[i] = 1.0 / tempDigraph.V();
-			int inDegreeforVertex = tempDigraph.indegree(v);
-			if (inDegreeforVertex == 0.0) {
+			inDegreeforVertex[i] = tempDigraph.indegree(v);
+			if (inDegreeforVertex[i] == 0.0) {
 				return 0.0;
 			} else {
-				double y = initialPageRank[i] / inDegreeforVertex;
+				double y = initialPageRank[i] / inDegreeforVertex[i];
 				return y;
 			}
 		}
