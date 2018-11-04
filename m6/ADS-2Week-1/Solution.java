@@ -1,83 +1,81 @@
-import java.util.ArrayList;
+import java.util.Scanner;
 /**
  * Class for page rank.
  */
 class PageRank {
 	/**
-	 * { var_description }.
+	 * { var_description }
 	 */
-	Digraph tempDigraph;
+	private Digraph gr;
 	/**
-	 * { var_description }.
+	 * { var_description }
 	 */
-	double[] initialPageRank;
+	private Digraph revdg;
 	/**
-	 * { var_description }.
+	 * { var_description }
 	 */
-	double[] updatedPageRanks;
+	private int vertices;
 	/**
-	 * { var_description }.
+	 * { var_description }
 	 */
-	int[] inDegreeforVertex;
+	private Double[] pr;
+
 
 	/**
 	 * Constructs the object.
 	 *
 	 * @param      digraph  The digraph
 	 */
-	PageRank(final Digraph digraph) {
-		initialPageRank = new double[100];
-		updatedPageRanks = new double[100];
-		inDegreeforVertex = new int[100];
-		this.tempDigraph = digraph;
-		for (int i = 0; i < digraph.V(); i++) {
-			initialPageRank[i] = 1.0 / tempDigraph.V();
-			updatedPageRanks[i] = getPageRank(i);
-			//System.out.println(updatedPageRanks[i]);
+
+	PageRank(final Digraph gr) {
+		this.gr = gr;
+		this.revdg = gr.reverse();
+		this.vertices = gr.V();
+		pr = new Double[vertices];
+		int ver = gr.V();
+		for (int i = 0; i < vertices; i++) {
+			pr[i] = 1.0 / ver;
 		}
-		display();
+		prCalculation();
 	}
-	/**
-	 * { function_description }.
-	 */
-	public void display() {
-		for (int i = 0; i < tempDigraph.V(); i++) {
-			System.out.println(i  + " - " + updatedPageRanks[i]);
-		}
-	}
-	/**
-	 * Gets the page rank.
-	 *
-	 * @param      v     { parameter_description }.
-	 *
-	 * @return     The page rank.
-	 */
-	public double getPageRank(int v) {
-		int k = tempDigraph.indegree(v);
-		for (int i = 0; i < tempDigraph.V(); i++) {
-			initialPageRank[i] = 1.0 / tempDigraph.V();
-			inDegreeforVertex[i] = tempDigraph.indegree(v);
-			if (inDegreeforVertex[i] == 0.0) {
-				return 0.0;
-			} else if (k > 1) {
-				ArrayList<Iterable> al = new ArrayList<Iterable>();
-				al.add(tempDigraph.adj(i));
-				System.out.println(al);
-				//tempDigraph.adj(i);
-				// tempDigraph.adj(i);
-				                  
-				// for (int j = 0; j < k - 1; j++) {
-				// 	double y = initialPageRank[j] / inDegreeforVertex[j] ;
-				// 	return y;
-				// }
-			} else {
-				double y = initialPageRank[i] / tempDigraph.outdegree(inDegreeforVertex[i]);
-				//System.out.println(tempDigraph.adj(i));
-				return y;
+
+	public void prCalculation() {
+		for (int i = 0; i < vertices; i++) {
+			if (gr.outdegree(i) == 0) {
+				for (int j = 0; j < vertices; j++) {
+					if (i != j) {
+						gr.addEdge(i, j);
+					}
+				}
 			}
 		}
-		return -12.1;
+		final int thousand = 1000;
+		for (int k = 1; k < thousand; k++) {
+			Double[] temppr = new Double[vertices];
+			for (int i = 0; i < vertices; i++) {
+				Double newpr = 0.0;
+				for (int ele : gr.reverse().adj(i)) {
+					newpr = newpr
+					        + pr[ele] / gr.outdegree(ele);
+				}
+				temppr[i] = newpr;
+			}
+			pr = temppr;
+		}
 	}
+
+	public Double getPageRank(final int v) {
+		return pr[v];
+	}
+	/**.
+	 * method to printer
+	 */
+	public void display() {
+		for (int i = 0; i < vertices; i++) {
+			System.out.println(i + " - " + pr[i]);
+		}
+	}
+
 
 }
 /**
@@ -97,30 +95,29 @@ public class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
-		In scan = new In();
+		Scanner scan = new Scanner(System.in);
 		// read the first line of the input to get the number of vertices
-		int numOfVertices = Integer.parseInt(scan.readLine());
-		Digraph digraphObj = new Digraph(numOfVertices);
-		while (numOfVertices > 0) {
-			String[] tokens = scan.readLine().split(" ");
-			int v = Integer.parseInt(tokens[0]);
-			for (int i = 1; i < tokens.length; i++) {
-				//System.out.println(v+"\t"+i);
-				digraphObj.addEdge(v, Integer.parseInt(tokens[i]));
+		int numOfVertices = Integer.parseInt(scan.nextLine());
+		Digraph diobj = new Digraph(numOfVertices);
+		for (int i = 0; i < numOfVertices; i++) {
+			String[] tokens = scan.nextLine().split(" ");
+			for (int j = 1; j < tokens.length; j++) {
+				int v = Integer.parseInt(tokens[0]);
+				int adj = Integer.parseInt(tokens[j]);
+				diobj.addEdge(v, adj);
 			}
-			numOfVertices--;
-		}
-		System.out.println(digraphObj);
-		//System.out.println();
-		PageRank pageRankObj = new PageRank(digraphObj);
-		// iterate count of vertices times
-		// to read the adjacency list from std input
-		// and build the graph
 
+			// iterate count of vertices times
+			// to read the adjacency list from std input
+			// and build the graph
+		}
+		System.out.println(diobj.toString());
+		PageRank probj = new PageRank(diobj);
 
 		// Create page rank object and pass the graph object to the constructor
 
 		// print the page rank object
+		probj.display();
 
 		// This part is only for the final test case
 
@@ -134,6 +131,5 @@ public class Solution {
 		// remove the q= prefix and extract the search word
 		// pass the word to iAmFeelingLucky method of web search
 		// print the return value of iAmFeelingLucky
-
 	}
 }
