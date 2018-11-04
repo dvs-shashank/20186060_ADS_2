@@ -19,11 +19,11 @@ public class DirectedCycle {
      */
     private Stack<Integer> cycle;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int vertices;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private boolean isbipartite = false;
     /**
@@ -37,7 +37,9 @@ public class DirectedCycle {
         onStack = new boolean[graph.numV()];
         edgeTo  = new int[graph.numV()];
         for (int v = 0; v < graph.numV(); v++) {
-            if (!marked[v] && cycle == null) dfs(graph, v);
+            if (!marked[v] && cycle == null) {
+                dfs(graph, v);
+            }
         }
     }
     /**
@@ -54,7 +56,7 @@ public class DirectedCycle {
 
             // short circuit if directed cycle found
             if (cycle != null) {
-             return;
+                return;
             }
 
             // found new vertex, so recur

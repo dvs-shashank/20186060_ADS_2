@@ -3,13 +3,10 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\DirectedCycle.java:21: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\DirectedCycle.java:25: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\DirectedCycle.java:40: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\DirectedCycle.java:58:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\DirectedCycle.java:64:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\DirectedCycle.java:60:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\DirectedCycle.java:66:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m3\assignment - 2\3.2 Bipartite\Graph.java:13: First sentence should end with a period. [JavadocStyle]
 Audit done.
