@@ -5,13 +5,9 @@ public class DirectedCycle {
     /**
      * { var_description }.
      */
-    private boolean isbipartite = false;
-    /**
-     * { var_description }.
-     */
     private boolean[] marked;
     /**
-     * // marked[v] = has vertex v been marked?.
+     * { var_description }.
      */
     private int[] edgeTo;
     /**
@@ -23,93 +19,72 @@ public class DirectedCycle {
      */
     private Stack<Integer> cycle;
     /**
-     * Constructs the object.
-     *
-     * @param      g     { parameter_description }.
+     * { var_description }
      */
-    DirectedCycle(final Digraph g) {
-        marked  = new boolean[g.numV()];
-        onStack = new boolean[g.numV()];
-        edgeTo  = new int[g.numV()];
-        for (int v = 0; v < g.numV(); v++) {
-            if (!marked[v] && cycle == null) {
-                dfs(g, v);
-            }
+    private int vertices;
+    /**
+     * { var_description }
+     */
+    private boolean isbipartite = false;
+    /**
+     * Determines whether the digraph {@code G} has a directed cycle and, if so
+     * finds such a cycle.
+     * @param graph the digraph
+     */
+    public DirectedCycle(final Graph graph) {
+        this.vertices = 0;
+        marked  = new boolean[graph.numV()];
+        onStack = new boolean[graph.numV()];
+        edgeTo  = new int[graph.numV()];
+        for (int v = 0; v < graph.numV(); v++) {
+            if (!marked[v] && cycle == null) dfs(graph, v);
         }
     }
     /**
      * { function_description }.
      *
-     * @param      g     { parameter_description }.
-     * @param      v     { parameter_description }.
+     * @param      graph     { parameter_description }
+     * @param      v     { parameter_description }
      */
-    private void dfs(final Digraph g, final int v) {
+    private void dfs(final Graph graph, final int v) {
         isbipartite = !isbipartite;
         onStack[v] = true;
         marked[v] = true;
-        for (int w : g.adj(v)) {
+        for (int w : graph.adj(v)) {
 
             // short circuit if directed cycle found
             if (cycle != null) {
-                return;
-            } else if (!marked[w]) {
+             return;
+            }
+
+            // found new vertex, so recur
+            else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(g, w);
-            } else if (onStack[w]) {
+                dfs(graph, w);
+            }
+
+            // trace back directed cycle
+            else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
+
             }
         }
         onStack[v] = false;
     }
-
     /**
      * Determines if it has cycle.
      *
      * @return     True if has cycle, False otherwise.
      */
     public boolean hasCycle() {
-        if (cycle != null) {
-            return true;
-        }
-        return false;
+        return cycle != null;
     }
-    /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Iterable<Integer> cycle() {
-        return cycle;
-    }
-    /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }.
-     */
-    private boolean check() {
-        if (hasCycle()) {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : cycle()) {
-                if (first == -1) {
-                    first = v;
-                }
-                last = v;
-            }
-            if (first != last) {
-                System.out.println("cycle begins with %d and ends with %d\n"
-                                   + first + last);
-                return false;
-            }
-        }
-        return true;
-    }
+
     /**
      * Determines if bipartite.
      *
@@ -119,4 +94,3 @@ public class DirectedCycle {
         return isbipartite;
     }
 }
-

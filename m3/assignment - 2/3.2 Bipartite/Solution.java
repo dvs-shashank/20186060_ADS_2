@@ -19,7 +19,7 @@ public final class Solution {
         Scanner scan = new Scanner(System.in);
         int numOfVertices = Integer.parseInt(scan.nextLine());
         int numOfEdges = Integer.parseInt(scan.nextLine());
-        Digraph dg = new Digraph(numOfVertices);
+        Graph dg = new Graph(numOfVertices);
         while (numOfEdges > 0) {
             String[] connectedVertices = scan.nextLine().split(" ");
             dg.addEdge(Integer.parseInt(connectedVertices[0]),
