@@ -28,8 +28,9 @@ Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Bag.java:125:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Bag.java:126: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Bag.java:128: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Bag.java:132: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 30 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\BreadthFirstDirectedPaths.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\BreadthFirstDirectedPaths.java:30: Line is longer than 80 characters (found 82). [LineLength]
@@ -332,25 +333,27 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:8:17: Variable 'tempDigraph' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:12:18: Variable 'initialPageRank' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:16:18: Variable 'updatedPageRanks' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:20:15: Variable 'inDegreeforVertex' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:28:46: '100' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:29:47: '100' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:30:45: '100' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:54:35: Parameter v should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:63: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:67: Line is longer than 80 characters (found 108). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:71:24: '-12.1' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:85:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:93: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:101: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:113: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:123: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:9:17: Variable 'tempDigraph' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:13:18: Variable 'initialPageRank' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:17:18: Variable 'updatedPageRanks' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:21:15: Variable 'inDegreeforVertex' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:29:46: '100' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:30:47: '100' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:31:45: '100' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:55:35: Parameter v should be final. [FinalParameters]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:63: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:68: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:70: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:74: Line is longer than 80 characters (found 108). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:79:24: '-12.1' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:93:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:101: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:109: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:121: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Solution.java:131: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 20 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

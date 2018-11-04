@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 /**
  * Class for page rank.
  */
@@ -52,19 +53,26 @@ class PageRank {
 	 * @return     The page rank.
 	 */
 	public double getPageRank(int v) {
+		int k = tempDigraph.indegree(v);
 		for (int i = 0; i < tempDigraph.V(); i++) {
 			initialPageRank[i] = 1.0 / tempDigraph.V();
 			inDegreeforVertex[i] = tempDigraph.indegree(v);
 			if (inDegreeforVertex[i] == 0.0) {
 				return 0.0;
-				// } else if (tempDigraph.indegree(v) > 1) {
-				// 	int k = tempDigraph.indegree(v);
-				// 	for (int j = 0; j < k - 1; j++) {
-				// 		double y = initialPageRank[j] / inDegreeforVertex[j] ;
-				// 		return y;
-				// 	}
+			} else if (k > 1) {
+				ArrayList<Iterable> al = new ArrayList<Iterable>();
+				al.add(tempDigraph.adj(i));
+				System.out.println(al);
+				//tempDigraph.adj(i);
+				// tempDigraph.adj(i);
+				                  
+				// for (int j = 0; j < k - 1; j++) {
+				// 	double y = initialPageRank[j] / inDegreeforVertex[j] ;
+				// 	return y;
+				// }
 			} else {
 				double y = initialPageRank[i] / tempDigraph.outdegree(inDegreeforVertex[i]);
+				//System.out.println(tempDigraph.adj(i));
 				return y;
 			}
 		}
