@@ -45,50 +45,50 @@ public class WordNet {
     void parseMySynsetFile(String filename, String hypernyms) {
         int id = 0;
         //int numOfVertices = 0;
-
-        In inObj = new In(filename);
-        while (!inObj.isEmpty()) {
-            this.numOfVertices++;
-            String[] synsetArray = inObj.readLine().split(",");
-            id = Integer.parseInt(synsetArray[0]);
-            //listObj.add(id);
-            synsetsList.add(id, synsetArray[1]);
-            String[] nounsArray = synsetArray[1].split(" ");
-            for (int i = 0; i < nounsArray.length; i++) {
-                //reverseSt.put(Integer.parseInt(synsetArray[0]), synsetArray[1]);
-                ArrayList<Integer> listObj;
-                if (hashObj.contains(nounsArray[i])) {
-                    listObj = hashObj.get(nounsArray[i]);
-                    listObj.add(id);
-                } else {
-                    listObj = new ArrayList<Integer>();
-                    listObj.add(id);
+            
+            In inObj = new In(filename);
+            while (!inObj.isEmpty()) {
+                this.numOfVertices++;
+                String[] synsetArray = inObj.readLine().split(",");
+                id = Integer.parseInt(synsetArray[0]);
+                //listObj.add(id);
+                synsetsList.add(id, synsetArray[1]);
+                String[] nounsArray = synsetArray[1].split(" ");
+                for (int i = 0; i < nounsArray.length; i++) {
+                    //reverseSt.put(Integer.parseInt(synsetArray[0]), synsetArray[1]);
+                    ArrayList<Integer> listObj;
+                    if (hashObj.contains(nounsArray[i])) {
+                        listObj = hashObj.get(nounsArray[i]);
+                        listObj.add(id);
+                    } else {
+                        listObj = new ArrayList<Integer>();
+                        listObj.add(id);
+                    }
+                    hashObj.put(nounsArray[i], listObj);
                 }
-                hashObj.put(nounsArray[i], listObj);
             }
-        }
-        //Digraph digraphObj = new Digraph(numOfVertices);
-        digraphObj = new Digraph(numOfVertices);
-        parseMyHypernymsFile(hypernyms, digraphObj, numOfVertices);
-    }
-
+            //Digraph digraphObj = new Digraph(numOfVertices);
+            digraphObj = new Digraph(numOfVertices);
+            parseMyHypernymsFile(hypernyms, digraphObj, numOfVertices);
+        } 
+    
 
     void parseMyHypernymsFile(String hypernyms, Digraph tempObj, int numOfVertices) {
-        In inObj = new In(hypernyms);
-        while (!inObj.isEmpty()) {
-            String[] synsetArray = inObj.readLine().split(",");
-            int v = Integer.parseInt(synsetArray[0]);
-            for (int i = 1; i < synsetArray.length; i++) {
-                //System.out.println(v+"\t"+i);
-                tempObj.addEdge(v, Integer.parseInt(synsetArray[i]));
+            In inObj = new In(hypernyms);
+            while (!inObj.isEmpty()) {
+                String[] synsetArray = inObj.readLine().split(",");
+                int v = Integer.parseInt(synsetArray[0]);
+                for (int i = 1; i < synsetArray.length; i++) {
+                    //System.out.println(v+"\t"+i);
+                    tempObj.addEdge(v, Integer.parseInt(synsetArray[i]));
+                }
+                // int v = Integer.parseInt(synsetArray[0]);
+                // int w = Integer.parseInt(fileArray[1]);
+                //tempObj.addEdge(v, w);
             }
-            // int v = Integer.parseInt(synsetArray[0]);
-            // int w = Integer.parseInt(fileArray[1]);
-            //tempObj.addEdge(v, w);
-        }
-
-    }
-
+            
+        } 
+    
 
     // // returns all WordNet nouns
     public Iterable<String> nouns() {
@@ -103,12 +103,10 @@ public class WordNet {
     // // distance between nounA and nounB (defined below)
     public int distance(String nounA, String nounB) {
         if (!isNoun(nounA) || !isNoun(nounB)) {
-            System.out.println("IllegalArgumentException");
+           System.out.println("IllegalArgumentException");
         }
         Iterable<Integer> noun1 = hashObj.get(nounA);
         Iterable<Integer> noun2 = hashObj.get(nounB);
-        // System.out.println("sdkjfka");
-        // System.out.println(sapObj.length(noun1, noun2));
         return sapObj.length(noun1, noun2);
     }
 
@@ -118,7 +116,7 @@ public class WordNet {
         Iterable<Integer> noun1 = hashObj.get(nounA);
         Iterable<Integer> noun2 = hashObj.get(nounB);
         if (!isNoun(nounA) || !isNoun(nounB)) {
-            System.out.println("IllegalArgumentException");
+           System.out.println("IllegalArgumentException");
         }
         int id = sapObj.ancestor(noun1, noun2);
         return synsetsList.get(id);
@@ -127,26 +125,25 @@ public class WordNet {
 
     public void display() {
         DirectedCycle dc = new DirectedCycle(digraphObj);
-        int count = 0;
-        for (int i = 0; i < numOfVertices; i++) {
-            if (digraphObj.outdegree(i) == 0) {
-                count++;
+            int count = 0;
+            for (int i = 0; i < numOfVertices; i++) {
+                if (digraphObj.outdegree(i) == 0) {
+                    count++;
+                }
+
             }
-
-        }
-        if (count > 1) {
-            System.out.println("Multiple roots");
-            return;
-        }
-        //System.out.println(digraphObj);
-        if (dc.hasCycle()) {
-            System.out.println("Cycle detected");
-            // } else {
-            //     System.out.println(digraphObj);
-            // }
-        }
-
-        // // do unit testing of this class
-        // public static void main(String[] args)
+            if (count > 1) {
+                System.out.println("Multiple roots");
+                return;
+            }
+            //System.out.println(digraphObj);
+            if (dc.hasCycle()) {
+                System.out.println("Cycle detected");
+            } else {
+                System.out.println(digraphObj);
+            }
     }
+
+    // // do unit testing of this class
+    // public static void main(String[] args)
 }
