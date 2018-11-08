@@ -32,13 +32,9 @@ Checkstyle ends with 28 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Queue.java:9: Line has trailing spaces. [RegexpSingleline]
@@ -76,10 +72,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Stack.java:14: Line has trailing spaces. [RegexpSingleline]
