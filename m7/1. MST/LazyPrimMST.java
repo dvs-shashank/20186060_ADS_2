@@ -1,8 +1,26 @@
+/**
+ * Class for lazy primitive mst.
+ */
 public class LazyPrimMST {
+    /**
+     * { var_description }.
+     */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
+    /**
+     * { var_description }.
+     */
     private double weight;
+    /**
+     * { var_description }.
+     */
     private Queue<Edge> mst;
+    /**
+     * { var_description }.
+     */
     private boolean[] marked;
+    /**
+     * { var_description }.
+     */
     private MinPQ<Edge> pq;
 
     /**

@@ -30,23 +30,15 @@ Starting audit...
 Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\LazyPrimMST.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\LazyPrimMST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\LazyPrimMST.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\LazyPrimMST.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\LazyPrimMST.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\LazyPrimMST.java:6:5: Missing a Javadoc comment. [JavadocVariable]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Queue.java:9: Line has trailing spaces. [RegexpSingleline]
@@ -85,11 +77,9 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m7\1. MST\Stack.java:14: Line has trailing spaces. [RegexpSingleline]
