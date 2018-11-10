@@ -95,7 +95,7 @@ public class DijkstraUndirectedSP {
     public void printPath() {
         //System.out.println(Arrays.toString(path));
         for (int paths : path) {
-            System.out.println(paths);
+            System.out.print(paths + " ");
         }
     }
 }
