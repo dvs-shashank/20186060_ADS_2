@@ -77,6 +77,7 @@ public class DijkstraUndirectedSP {
      * {@code false} otherwise
      */
     public boolean hasPathTo(final int v) {
+        //System.out.println(distTo[v]);
         return distTo[v] < Double.POSITIVE_INFINITY;
     }
 }
