@@ -1,4 +1,4 @@
-import java.util.Arrays;
+//import java.util.Arrays;
 /**
  * Class for dijkstra undirected sp.
  */
@@ -16,7 +16,7 @@ public class DijkstraUndirectedSP {
      */
     private IndexMinPQ<Double> pq;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int[] path;
 
