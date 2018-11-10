@@ -14,7 +14,5 @@ Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:67: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:77: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.

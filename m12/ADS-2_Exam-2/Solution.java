@@ -64,9 +64,12 @@ public final class Solution {
             dijkstrasObject1 = new DijkstraUndirectedSP(ewgobj, src);
             if (dijkstrasObject1.hasPathTo(via)) {
                 //Foo foo2 = new Foo(foo1);
-                DijkstraUndirectedSP dijkstrasObject2 = new DijkstraUndirectedSP(ewgobj, via);
+                DijkstraUndirectedSP
+                dijkstrasObject2 = new DijkstraUndirectedSP(ewgobj, via);
                 if (dijkstrasObject2.hasPathTo(dest)) {
                     System.out.println(dijkstrasObject2.distTo(dest));
+                } else {
+                    System.out.println("No Path Found.");
                 }
                 //System.out.println(dijkstrasObject1.path());
             } else {
@@ -74,7 +77,8 @@ public final class Solution {
             }
 
             // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the one where path should pass throuh.
+            // First is the source and second is the via
+            // is the one where path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
