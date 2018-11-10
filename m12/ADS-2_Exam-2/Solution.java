@@ -16,14 +16,14 @@ public class Solution {
 		int numOfCities = Integer.parseInt(scan.nextLine());
 		int numOfRoads = Integer.parseInt(scan.nextLine());
 		EdgeWeightedGraph ewgobj = new EdgeWeightedGraph(numOfCities);
-		while (numOfCities > 0) {
+		while (numOfRoads > 0) {
 			String[] tokens = scan.nextLine().split(" ");
 			int v = Integer.parseInt(tokens[0]);
 			int w = Integer.parseInt(tokens[1]);
 			double distance = Double.parseDouble(tokens[2]);
 			Edge edge = new Edge(v, w, distance);
 			ewgobj.addEdge(edge);
-			numOfCities--;
+			numOfRoads--;
 		}
 		String caseToGo = scan.nextLine();
 		switch (caseToGo) {
