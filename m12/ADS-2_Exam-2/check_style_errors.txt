@@ -1,0 +1,23 @@
+Starting audit...
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:104:5: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:104:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:106:56: '+' is not preceded with whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 3 errors.
+Starting audit...
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:36: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:44: Line is longer than 80 characters (found 110). [LineLength]
+Audit done.
+Checkstyle ends with 6 errors.
