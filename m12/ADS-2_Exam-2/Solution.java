@@ -63,11 +63,14 @@ public final class Solution {
             DijkstraUndirectedSP
             dijkstrasObject1 = new DijkstraUndirectedSP(ewgobj, src);
             if (dijkstrasObject1.hasPathTo(via)) {
+                // path[count++] = v;
                 //Foo foo2 = new Foo(foo1);
                 DijkstraUndirectedSP
                 dijkstrasObject2 = new DijkstraUndirectedSP(ewgobj, via);
                 if (dijkstrasObject2.hasPathTo(dest)) {
                     System.out.println(dijkstrasObject1.distTo(via) + dijkstrasObject2.distTo(dest));
+                    dijkstrasObject1.printPath();
+                    //dijkstrasObject2.printPath();
                 } else {
                     System.out.println("No Path Found.");
                 }

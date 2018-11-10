@@ -1,3 +1,4 @@
+import java.util.Arrays;
 /**
  * Class for dijkstra undirected sp.
  */
@@ -14,6 +15,10 @@ public class DijkstraUndirectedSP {
      * {priority queue of vertices}.
      */
     private IndexMinPQ<Double> pq;
+    /**
+     * { var_description }
+     */
+    private int[] path;
 
     /**
      *
@@ -21,6 +26,7 @@ public class DijkstraUndirectedSP {
      * @param  s the source vertex
      */
     public DijkstraUndirectedSP(final EdgeWeightedGraph g, final int s) {
+        path = new int[g.vertices()];
         this.distTo = new double[g.vertices()];
         this.edgeTo = new Edge[g.vertices()];
         for (int v = 0; v < g.vertices(); v++) {
@@ -66,6 +72,8 @@ public class DijkstraUndirectedSP {
      *
      */
     public double distTo(final int v) {
+        int count = 0;
+        path[count++] = v;
         return distTo[v];
     }
 
@@ -78,6 +86,16 @@ public class DijkstraUndirectedSP {
      */
     public boolean hasPathTo(final int v) {
         //System.out.println(distTo[v]);
+        //System.out.println(path[0]);
         return distTo[v] < Double.POSITIVE_INFINITY;
+    }
+    /**
+     * { function_description }.
+     */
+    public void printPath() {
+        //System.out.println(Arrays.toString(path));
+        for (int paths : path) {
+            System.out.println(paths);
+        }
     }
 }

@@ -1,10 +1,13 @@
 Starting audit...
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:18: First sentence should end with a period. [JavadocStyle]
 Audit done.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:70: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m12\ADS-2_Exam-2\Solution.java:71: Line is longer than 80 characters (found 101). [LineLength]
 Audit done.
 Checkstyle ends with 1 errors.
