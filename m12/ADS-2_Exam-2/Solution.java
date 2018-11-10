@@ -33,6 +33,15 @@ public class Solution {
 			break;
 
 		case "DirectedPaths":
+			String[] srcToDestination = scan.nextLine().split(" ");
+			int source = Integer.parseInt(srcToDestination[0]);
+			int destination = Integer.parseInt(srcToDestination[1]);
+			DijkstraUndirectedSP dijkstrasObject = new DijkstraUndirectedSP(ewgobj, source);
+			if (dijkstrasObject.hasPathTo(destination)) {
+				System.out.println(dijkstrasObject.distTo(destination));
+			} else {
+				throw new IllegalArgumentException("No Path Found.");
+			}
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
