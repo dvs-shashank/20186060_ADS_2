@@ -5,6 +5,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Solution.java:32: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
-Checkstyle ends with 1 errors.
