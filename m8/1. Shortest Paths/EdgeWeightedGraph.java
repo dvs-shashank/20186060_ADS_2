@@ -100,10 +100,15 @@ public class EdgeWeightedGraph {
         }
         return list;
     }
-
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String str = "";
         str += this.vert + " " + this.edges;
         return str;
     }
 }
+

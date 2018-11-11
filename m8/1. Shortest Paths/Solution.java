@@ -1,6 +1,12 @@
 import java.util.Scanner;
 import java.util.HashMap;
+/**
+ * class solution.
+ */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
     private Solution() {
         //unused constructor.
     }
@@ -36,3 +42,4 @@ public final class Solution {
         }
     }
 }
+

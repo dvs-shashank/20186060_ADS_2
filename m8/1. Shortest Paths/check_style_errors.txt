@@ -3,17 +3,11 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\EdgeWeightedGraph.java:104:5: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\EdgeWeightedGraph.java:104:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Starting audit...
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Solution.java:13:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 2 errors.
-Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Solution.java:7:5: Missing a Javadoc comment. [JavadocMethod]
-Audit done.
-Checkstyle ends with 3 errors.
