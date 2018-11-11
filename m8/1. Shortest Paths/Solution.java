@@ -4,12 +4,17 @@ import java.util.HashMap;
  * class solution.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //unused constructor.
     }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] input = sc.nextLine().split(" ");
@@ -24,7 +29,7 @@ public final class Solution {
         while (m > 0) {
             String[] distance = sc.nextLine().split(" ");
             Edge edge = new Edge(hashobj.get(distance[0]),
-            hashobj.get(distance[1]), Double.parseDouble(distance[2]));
+                                 hashobj.get(distance[1]), Double.parseDouble(distance[2]));
             ewgobj.addEdge(edge);
             m--;
         }

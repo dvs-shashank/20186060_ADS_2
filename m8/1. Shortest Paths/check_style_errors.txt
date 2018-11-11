@@ -5,7 +5,6 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Solution.java:13:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m8\1. Shortest Paths\Solution.java:32: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
