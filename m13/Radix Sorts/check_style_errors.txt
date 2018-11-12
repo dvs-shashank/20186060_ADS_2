@@ -1,30 +1,12 @@
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:24:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:24:17: '256' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:32: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:36: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:40: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:44: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:56:19: Name 'BITS' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:57:19: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:58:19: Name 'MASK' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:60:19: Name 'BITS' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:61:19: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:62:19: Name 'MASK' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
 Audit done.
-Checkstyle ends with 9 errors.
-Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\MSD.java:24:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\MSD.java:24:17: '256' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\MSD.java:32: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\MSD.java:36: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\MSD.java:40: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\MSD.java:44: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\MSD.java:56:19: Name 'BITS' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\MSD.java:57:19: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\MSD.java:58:19: Name 'MASK' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\Solution.java:31:36: '(' is followed by whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
