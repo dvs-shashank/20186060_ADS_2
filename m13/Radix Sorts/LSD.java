@@ -21,7 +21,8 @@ public class LSD {
       */
     public static void sort(final String[] a, final int w) {
         int n = a.length;
-        int capitalR = 256;   // extend ASCII alphabet size
+        int x = (2 ^ 2);
+        int capitalR =  x * x * x * x;   // extend ASCII alphabet size
         String[] aux = new String[n];
 
         for (int d = w - 1; d >= 0; d--) {
@@ -58,7 +59,8 @@ public class LSD {
       */
     public static void sort(final int[] a) {
         final int bits = 32;                 // each int is 32 bits
-        final int capitalR = 1 << BITS_PER_BYTE; // each bytes is between 0 and 255
+        final int
+        capitalR = 1 << BITS_PER_BYTE;
         final int mask = capitalR - 1;              // 0xFF
         final int w = bits / BITS_PER_BYTE;  // each int is 4 bytes
 
@@ -104,3 +106,4 @@ public class LSD {
         }
     }
 }
+
