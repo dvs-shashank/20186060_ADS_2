@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Class for solution.
  */
@@ -19,15 +20,15 @@ public final class Solution {
 		int numOfInputs = Integer.parseInt(rashmika.nextLine());
 		String[] eachInput = new String[numOfInputs];
 		for (int i = 0; i < eachInput.length; i++) {
-		 	eachInput[i] = rashmika.nextLine();
-		 } 
+			eachInput[i] = rashmika.nextLine();
+		}
 		//while(numOfInputs > 0) {
 		// 	eachInput[numOfInputs] = rashmika.nextLine();
 		// 	numOfInputs--;
 		// }
-		MSD msdObject = new MSD();
-		msdObject.sort(eachInput);
-		msdObject.output(eachInput);
+		LSD lsdObj = new LSD();
+		lsdObj.sort(eachInput, eachInput[0].length());
+		Arrays.toString(eachInput);
 		//System.out.println(msdObject);
 	}
 }
