@@ -167,7 +167,7 @@ class MSD {
         a[i] = a[j];
         a[j] = temp;
     }
-    public void toString(final String[] eachInputArray) {
+    public void output(final String[] eachInputArray) {
         StringBuffer sb = new StringBuffer();
         sb.append("[");
         for (int i = 0; i < eachInputArray.length - 1; i++) {

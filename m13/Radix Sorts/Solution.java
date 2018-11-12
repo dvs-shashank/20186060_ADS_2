@@ -27,6 +27,7 @@ public final class Solution {
 		// }
 		MSD msdObject = new MSD();
 		msdObject.sort(eachInput);
-		System.out.println(msdObject);
+		msdObject.output(eachInput);
+		//System.out.println(msdObject);
 	}
 }
