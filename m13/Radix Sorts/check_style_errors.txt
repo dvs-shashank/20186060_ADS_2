@@ -25,5 +25,6 @@ Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\Solution.java:31:36: '(' is followed by whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 3 errors.

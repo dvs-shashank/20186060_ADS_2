@@ -28,7 +28,8 @@ public final class Solution {
 		// }
 		LSD lsdObj = new LSD();
 		lsdObj.sort(eachInput, eachInput[0].length());
-		Arrays.toString(eachInput);
+		System.out.println(		Arrays.toString(eachInput)
+		                  );
 		//System.out.println(msdObject);
 	}
 }
