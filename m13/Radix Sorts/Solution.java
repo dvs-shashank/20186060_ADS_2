@@ -18,10 +18,13 @@ public final class Solution {
 		Scanner rashmika = new Scanner(System.in);
 		int numOfInputs = Integer.parseInt(rashmika.nextLine());
 		String[] eachInput = new String[numOfInputs];
-		while(numOfInputs > 0) {
-			eachInput[numOfInputs] = rashmika.nextLine();
-			numOfInputs--;
-		}
+		for (int i = 0; i < eachInput.length; i++) {
+		 	eachInput[i] = rashmika.nextLine();
+		 } 
+		//while(numOfInputs > 0) {
+		// 	eachInput[numOfInputs] = rashmika.nextLine();
+		// 	numOfInputs--;
+		// }
 		MSD msdObject = new MSD();
 		msdObject.sort(eachInput);
 		System.out.println(msdObject);
