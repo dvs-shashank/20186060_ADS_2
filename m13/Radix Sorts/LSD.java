@@ -21,7 +21,7 @@ public class LSD {
       */
     public static void sort(final String[] a, final int w) {
         int n = a.length;
-        int x = (2 ^ 2);
+        int x = (2 * 2);
         int capitalR =  x * x * x * x;   // extend ASCII alphabet size
         String[] aux = new String[n];
 
