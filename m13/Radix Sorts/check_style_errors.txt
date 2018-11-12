@@ -1,6 +1,6 @@
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:24:24: '256' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:61:19: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m13\Radix Sorts\LSD.java:61: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...

@@ -58,8 +58,8 @@ public class LSD {
       */
     public static void sort(final int[] a) {
         final int bits = 32;                 // each int is 32 bits
-        final int R = 1 << BITS_PER_BYTE; // each bytes is between 0 and 255
-        final int mask = R - 1;              // 0xFF
+        final int capitalR = 1 << BITS_PER_BYTE; // each bytes is between 0 and 255
+        final int mask = capitalR - 1;              // 0xFF
         final int w = bits / BITS_PER_BYTE;  // each int is 4 bytes
 
         int n = a.length;
@@ -68,25 +68,25 @@ public class LSD {
         for (int d = 0; d < w; d++) {
 
             // compute frequency counts
-            int[] count = new int[R + 1];
+            int[] count = new int[capitalR + 1];
             for (int i = 0; i < n; i++) {
                 int c = (a[i] >> BITS_PER_BYTE * d) & mask;
                 count[c + 1]++;
             }
 
             // compute cumulates
-            for (int r = 0; r < R; r++) {
+            for (int r = 0; r < capitalR; r++) {
                 count[r + 1] += count[r];
             }
 
             // for most significant byte, 0x80-0xFF comes before 0x00-0x7F
             if (d == w - 1) {
-                int shift1 = count[R] - count[R / 2];
-                int shift2 = count[R / 2];
-                for (int r = 0; r < R / 2; r++) {
+                int shift1 = count[capitalR] - count[capitalR / 2];
+                int shift2 = count[capitalR / 2];
+                for (int r = 0; r < capitalR / 2; r++) {
                     count[r] += shift1;
                 }
-                for (int r = R / 2; r < R; r++) {
+                for (int r = capitalR / 2; r < capitalR; r++) {
                     count[r] -= shift2;
                 }
             }
