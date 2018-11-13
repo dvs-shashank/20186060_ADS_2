@@ -3,9 +3,12 @@ import java.util.Scanner;
  * client class.
  */
 public final class Solution {
-	private Solution() {
-		//eval constructor.
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //eval constructor.
+    }
     /**
      * maim method.
      *
@@ -24,8 +27,9 @@ public final class Solution {
                 tst.put(suffArray.select(i), j++);
             }
         }
-        for(String each : tst.keysWithPrefix(prefix))
+        for (String each : tst.keysWithPrefix(prefix)) {
             System.out.println(each);
+        }
     }
     /**
      * Loads words.

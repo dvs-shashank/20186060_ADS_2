@@ -175,13 +175,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m14\Assignment-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m14\Assignment-1\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m14\Assignment-1\Solution.java:27: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m14\Assignment-1\Solution.java:27:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m14\Assignment-1\SuffixArray.java:23: Line is longer than 80 characters (found 82). [LineLength]
