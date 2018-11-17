@@ -140,7 +140,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-     T9(final BinarySearchST<String, Integer> st) {
+     public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tstObject = new TST<Integer>();
         for (String word : st.keys()) {
