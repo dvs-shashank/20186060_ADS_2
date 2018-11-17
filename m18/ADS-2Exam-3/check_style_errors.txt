@@ -376,12 +376,9 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m18\ADS-2Exam-3\Solution.java:137:9: Variable 'tstObject' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m18\ADS-2Exam-3\Solution.java:143:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m18\ADS-2Exam-3\Solution.java:188: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m18\ADS-2Exam-3\Solution.java:199:64: Empty statement. [EmptyStatement]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

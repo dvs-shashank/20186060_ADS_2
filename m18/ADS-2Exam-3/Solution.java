@@ -134,7 +134,7 @@ class T9 {
     /**
      * variable.
      */
-    TST tstObject;
+    private TST tstObject;
     /**
      * Constructs the object.
      *
@@ -185,7 +185,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words,
+                                           final int k) {
         //Iterable<String> iterable = new Iterable<String>();
         // for (int i = 0; i < words.length(); i++) {
         //  int y = tstObject.get(words[i]);
@@ -196,7 +197,7 @@ class T9 {
         // tstObject.get("a");
         for (String each : words) {
             //System.out.println(each);
-            System.out.println(tstObject.keysWithPrefix(each));;
+            System.out.println(tstObject.keysWithPrefix(each));
             //System.out.println(tstObject.get(each));;
             // if (x == k) {
             //  System.out.println(each);
