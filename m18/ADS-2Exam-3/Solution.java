@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.HashMap;
+//import java.util.HashMap;
 /**
  * Class for solution.
  */
