@@ -222,15 +222,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\SeamCarver.java:20:37: 'picture' hides a field. [HiddenField]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\SeamCarver.java:67: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\SeamCarver.java:75: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\SeamCarver.java:268:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\SeamCarver.java:276: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\SeamCarver.java:276:50: '||' should be on a new line. [OperatorWrap]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\SeamCarver.java:285: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
