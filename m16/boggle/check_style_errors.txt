@@ -1,48 +1,11 @@
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:17: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:18: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:20: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:23: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:24:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:24:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:25:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:28: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:29:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:30:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:44: Expected @return tag. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:51: Expected @return tag. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:58:21: Parameter item should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:58:26: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:70: Expected @return tag. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:71: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:75: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:76:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:78: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:78:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:79: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:79:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:81:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:82: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Bag.java:84: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 28 errors.
 Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\BoggleSolver.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Solution.java:47:50: ':' should be on a new line. [OperatorWrap]
 Audit done.
 Checkstyle ends with 2 errors.
-Starting audit...
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Solution.java:30: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m16\boggle\Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
-Audit done.
-Checkstyle ends with 6 errors.
+Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
