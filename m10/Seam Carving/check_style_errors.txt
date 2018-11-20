@@ -2,27 +2,18 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:6:38: Parameter fileName should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:8: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:15: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:21: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:21:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:21:34: Parameter carver should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:21:53: Parameter seam should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:21:65: Parameter direction should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:28:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:28:61: '||' should be on a new line. [OperatorWrap]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:29:36: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:43:29: Parameter args should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:76: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:84: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:102: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:13: First sentence should end with a period. [JavadocStyle]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:28: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:33: First sentence should end with a period. [JavadocStyle]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:42:34: Parameter direction should be final. [FinalParameters]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:49:32: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:49:61: '||' should be on a new line. [OperatorWrap]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:50:36: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:104: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:113: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] F:\Git files\ADS-2\20186060_ADS_2\m10\Seam Carving\Solution.java:133: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 11 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
